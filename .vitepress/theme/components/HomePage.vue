@@ -1,38 +1,26 @@
 <template>
   <div class="home-page">
-    <section class="directory-hero">
-      <div class="hero-shell">
-        <div class="hero-copy">
-          <p class="eyebrow">Independent product directory</p>
-          <h1>Kakobuy<br /><span>Spreadsheet</span></h1>
-          <p class="hero-lede">
-            A focused starting point for category research, sizing notes, and clearly disclosed external spreadsheet resources.
-          </p>
-          <div class="hero-actions">
-            <a href="/external-resource" class="primary-action cta-spreadsheet">Review Spreadsheet Resource</a>
-            <a href="/blog/kakobuy-start-here/" class="secondary-action">Start with the directory</a>
-          </div>
-          <p class="hero-note">No store, payment service, warehouse, inspection service, or delivery operation.</p>
-        </div>
-
-        <div class="hero-panel" aria-label="Directory overview">
-          <div class="panel-window-bar"><span></span><span></span><span></span><strong>DIRECTORY / 01</strong></div>
-          <div class="panel-content">
-            <p class="panel-kicker">Browse menswear by purpose</p>
-            <h2>Find a useful starting point.</h2>
-            <div class="panel-list">
-              <a href="/shoes/" class="panel-row"><span class="panel-index">01</span><span>Shoes and footwear</span><span>→</span></a>
-              <a href="/clothes/" class="panel-row"><span class="panel-index">02</span><span>Men's clothing and fit</span><span>→</span></a>
-              <a href="/hats/" class="panel-row"><span class="panel-index">03</span><span>Accessories and style</span><span>→</span></a>
-              <a href="/blog/kakobuy-source-review/" class="panel-row"><span class="panel-index">04</span><span>Source review</span><span>→</span></a>
-            </div>
-            <div class="panel-footer"><span class="status-dot"></span> Read the source before you continue</div>
-          </div>
-        </div>
+    <section class="linktree-directory" aria-labelledby="directory-title">
+      <div class="linktree-profile">
+        <div class="profile-avatar">K</div>
+        <h1 id="directory-title">Kakobuy Spreadsheet</h1>
+        <p class="profile-handle">@kakobuy.menswear.directory</p>
+        <p class="profile-bio">Men’s clothing, fit notes, and spreadsheet research in one focused directory.</p>
+        <div class="profile-badges"><span>Men’s clothing first</span><span>Independent directory</span></div>
       </div>
+      <nav class="linktree-toc" aria-label="Spreadsheet directory">
+        <p class="toc-label">Directory / tap to jump</p>
+        <a href="/external-resource" class="linktree-row linktree-row-primary"><span class="toc-thumb toc-thumb-sheet">S</span><span><strong>Men’s Spreadsheet</strong><small>Browse the external resource</small></span><b>↗</b></a>
+        <a href="#menswear-categories" class="linktree-row"><span class="toc-thumb">01</span><span><strong>Men’s clothing categories</strong><small>Shirts, knitwear, jackets, trousers</small></span><b>↓</b></a>
+        <a href="#menswear-guides" class="linktree-row"><span class="toc-thumb">02</span><span><strong>Fit & materials guides</strong><small>Measurements, construction, care</small></span><b>↓</b></a>
+        <a href="#menswear-ugc" class="linktree-row"><span class="toc-thumb">03</span><span><strong>Spreadsheet user view</strong><small>Phone, desktop, detail-check demos</small></span><b>↓</b></a>
+        <a href="#menswear-feedback" class="linktree-row"><span class="toc-thumb">04</span><span><strong>Kakobuy purchase feedback</strong><small>What customers noticed after purchase</small></span><b>↓</b></a>
+        <a href="#site-disclosure" class="linktree-row"><span class="toc-thumb">05</span><span><strong>About this directory</strong><small>Scope, source responsibility, notice</small></span><b>↓</b></a>
+      </nav>
+      <p class="linktree-disclaimer">External resources open only after the source notice. This site does not process payments or place orders.</p>
     </section>
 
-    <section class="trust-strip" aria-label="Directory facts">
+    <section id="menswear-categories" class="trust-strip" aria-label="Directory facts">
       <div class="trust-shell">
         <div class="trust-item"><strong>10</strong><span>core guides</span></div>
         <div class="trust-item"><strong>01</strong><span>clear external notice</span></div>
@@ -66,7 +54,7 @@
       </div>
     </section>
 
-    <section class="guides-section content-section">
+    <section id="menswear-guides" class="guides-section content-section">
       <div class="section-shell">
         <div class="section-heading compact-heading">
           <div><p class="eyebrow">The core library</p><h2>Ten useful chapters.<br /><em>No content maze.</em></h2></div>
@@ -84,7 +72,7 @@
       </div>
     </section>
 
-    <section class="visual-section content-section">
+    <section id="menswear-ugc" class="visual-section content-section">
       <div class="section-shell">
         <div class="section-heading compact-heading">
           <div><p class="eyebrow">Visual reference</p><h2>See the context.<br /><em>Then check the source.</em></h2></div>
@@ -108,7 +96,7 @@
       </div>
     </section>
 
-    <section class="reviews-section content-section">
+    <section id="menswear-feedback" class="reviews-section content-section">
       <div class="section-shell">
         <div class="section-heading compact-heading">
           <div><p class="eyebrow">Men’s clothing feedback</p><h2>What shoppers<br /><em>actually noticed.</em></h2></div>
@@ -154,7 +142,7 @@
       </div>
     </section>
 
-    <section class="disclosure-section">
+    <section id="site-disclosure" class="disclosure-section">
       <div class="section-shell disclosure-shell">
         <div><p class="eyebrow">Before you continue</p><h2>This is a directory,<br />not a checkout.</h2></div>
         <div class="disclosure-copy">
@@ -202,6 +190,12 @@ const visibleGuideGroups = computed(() => guideGroups
 .section-shell, .hero-shell, .trust-shell { width: min(1180px, calc(100% - 48px)); margin: 0 auto; }
 .eyebrow { margin: 0 0 14px; color: #8b0000; font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
 
+.linktree-directory { width: min(680px, calc(100% - 32px)); margin: 0 auto; padding: 52px 0 38px; text-align: center; }
+.linktree-profile { display: flex; align-items: center; flex-direction: column; }
+.profile-avatar { width: 72px; height: 72px; display: grid; place-items: center; border: 4px solid #fff; border-radius: 50%; background: #8b0000; color: #fff; box-shadow: 0 4px 14px rgba(0,0,0,.14); font-size: 30px; font-weight: 900; }
+.linktree-profile h1 { margin: 14px 0 3px; color: #1d1d1d; font-size: 25px; letter-spacing: -.04em; }.profile-handle { margin: 0; color: #77716b; font-size: 13px; }.profile-bio { max-width: 430px; margin: 15px 0 12px; color: #4e4b47; font-size: 14px; line-height: 1.55; }.profile-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 7px; }.profile-badges span { padding: 5px 9px; border: 1px solid #d7d1c8; border-radius: 99px; color: #716d67; font-size: 10px; font-weight: 750; text-transform: uppercase; letter-spacing: .06em; }
+.linktree-toc { margin-top: 26px; }.toc-label { margin: 0 0 10px; color: #8b0000; font-size: 10px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }.linktree-row { position: relative; display: grid; grid-template-columns: 48px 1fr 32px; gap: 13px; align-items: center; min-height: 66px; margin: 10px 0; padding: 9px 15px 9px 9px; border: 1px solid #ded9d1; border-radius: 9px; background: rgba(255,255,255,.88); color: #282624 !important; text-align: left; text-decoration: none; box-shadow: 0 2px 0 rgba(0,0,0,.03); transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }.linktree-row:hover { transform: translateY(-2px); border-color: #8b0000; box-shadow: 0 7px 18px rgba(56,40,25,.09); }.linktree-row-primary { border-color: #8b0000; background: #8b0000; color: #fff !important; }.linktree-row-primary:hover { background: #720000; }.linktree-row > span:nth-child(2) { display: grid; gap: 3px; }.linktree-row strong { font-size: 14px; }.linktree-row small { color: #77716b; font-size: 11px; line-height: 1.35; }.linktree-row-primary small { color: #f1d9d9; }.linktree-row b { color: #8b0000; font-size: 19px; text-align: center; }.linktree-row-primary b { color: #d4af37; }.toc-thumb { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 6px; background: #ece8e0; color: #8b0000; font-size: 12px; font-weight: 850; }.toc-thumb-sheet { background: #d4af37; color: #1d1d1d; font-size: 23px; }.linktree-disclaimer { margin: 18px auto 0; color: #8a857d; font-size: 11px; line-height: 1.5; }
+
 .directory-hero { padding: 74px 0 62px; background: #f4f1eb; }
 .hero-shell { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr); gap: 72px; align-items: center; }
 .hero-copy h1 { margin: 0; font-size: clamp(52px, 7vw, 98px); letter-spacing: -.07em; line-height: .9; font-weight: 850; }
@@ -238,5 +232,5 @@ const visibleGuideGroups = computed(() => guideGroups
 .disclosure-section { padding: 76px 0; background: #d4af37; }.disclosure-shell { display: grid; grid-template-columns: .8fr 1.2fr; gap: 100px; align-items: center; }.disclosure-shell h2 { margin: 0; color: #1d1d1d; font-size: clamp(34px, 4vw, 54px); line-height: .98; letter-spacing: -.055em; }.disclosure-copy p { max-width: 560px; margin: 0 0 22px; color: #39362d; font-size: 15px; line-height: 1.7; }.disclosure-link { color: #8b0000 !important; font-size: 13px; font-weight: 850; text-decoration: none; }.disclosure-link span { margin-left: 12px; }
 
 @media (max-width: 900px) { .hero-shell, .process-layout, .disclosure-shell { grid-template-columns: 1fr; gap: 54px; }.hero-panel { max-width: 620px; width: 100%; justify-self: center; }.category-grid { grid-template-columns: repeat(2, 1fr); }.trust-shell { grid-template-columns: repeat(3, 1fr); }.trust-item-wide { grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,.22); border-right: 0; } }
-@media (max-width: 620px) { .section-shell, .hero-shell, .trust-shell { width: min(100% - 32px, 1180px); }.directory-hero { padding: 48px 0 46px; }.hero-copy h1 { font-size: 60px; }.hero-lede { font-size: 16px; }.hero-actions { align-items: stretch; flex-direction: column; }.hero-actions a { width: 100%; }.hero-panel { box-shadow: 9px 9px 0 #d4af37; }.panel-content { padding: 28px 22px; }.trust-shell { grid-template-columns: repeat(3, 1fr); }.trust-item { min-height: 88px; padding: 14px 10px; }.trust-item strong { font-size: 21px; }.trust-item span { font-size: 9px; letter-spacing: .03em; }.content-section { padding: 72px 0; }.section-heading { display: block; margin-bottom: 30px; }.section-heading > p { margin-top: 22px; }.category-grid { grid-template-columns: 1fr 1fr; gap: 9px; }.category-card { min-height: 250px; padding: 17px; }.card-mark { margin: 24px 0 16px; }.category-card h3 { font-size: 17px; }.category-card p { font-size: 12px; }.visual-grid, .review-grid { grid-template-columns: 1fr; gap: 12px; }.visual-card-large img, .visual-card img { aspect-ratio: 1.5; }.guide-grid { grid-template-columns: 1fr; }.guide-card:nth-child(odd) { border-right: 0; padding-right: 0; }.guide-card:nth-child(even) { padding-left: 0; }.process-layout, .disclosure-shell { gap: 34px; }.disclosure-section { padding: 58px 0; } }
+@media (max-width: 620px) { .section-shell, .hero-shell, .trust-shell { width: min(100% - 32px, 1180px); }.linktree-directory { padding-top: 34px; }.linktree-row { grid-template-columns: 42px 1fr 24px; gap: 10px; min-height: 62px; padding-right: 9px; }.toc-thumb { width: 42px; height: 42px; }.linktree-row strong { font-size: 13px; }.linktree-row small { font-size: 10px; }.directory-hero { padding: 48px 0 46px; }.hero-copy h1 { font-size: 60px; }.hero-lede { font-size: 16px; }.hero-actions { align-items: stretch; flex-direction: column; }.hero-actions a { width: 100%; }.hero-panel { box-shadow: 9px 9px 0 #d4af37; }.panel-content { padding: 28px 22px; }.trust-shell { grid-template-columns: repeat(3, 1fr); }.trust-item { min-height: 88px; padding: 14px 10px; }.trust-item strong { font-size: 21px; }.trust-item span { font-size: 9px; letter-spacing: .03em; }.content-section { padding: 72px 0; }.section-heading { display: block; margin-bottom: 30px; }.section-heading > p { margin-top: 22px; }.category-grid { grid-template-columns: 1fr 1fr; gap: 9px; }.category-card { min-height: 250px; padding: 17px; }.card-mark { margin: 24px 0 16px; }.category-card h3 { font-size: 17px; }.category-card p { font-size: 12px; }.visual-grid, .review-grid { grid-template-columns: 1fr; gap: 12px; }.visual-card-large img, .visual-card img { aspect-ratio: 1.5; }.guide-grid { grid-template-columns: 1fr; }.guide-card:nth-child(odd) { border-right: 0; padding-right: 0; }.guide-card:nth-child(even) { padding-left: 0; }.process-layout, .disclosure-shell { gap: 34px; }.disclosure-section { padding: 58px 0; } }
 </style>
