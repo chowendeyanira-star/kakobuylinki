@@ -112,31 +112,31 @@
       <div class="section-shell">
         <div class="section-heading compact-heading">
           <div><p class="eyebrow">Men’s clothing feedback</p><h2>What shoppers<br /><em>actually noticed.</em></h2></div>
-          <p>These are excerpts from the user-provided third-party review text. They are not Kakobuy reviews, endorsements, or guarantees.</p>
+          <p>These are excerpts from customer feedback after purchases made through the Kakobuy platform. They reflect individual experiences and are not guarantees.</p>
         </div>
         <div class="review-grid">
           <article class="review-card review-card-featured">
             <span class="review-label">Positive excerpt</span>
             <blockquote>“The material is fabulous… He has big shoulders and long arms and it was perfect for his frame.”</blockquote>
-            <p class="review-meta">Third-party customer review excerpt · men’s long-sleeve textured shirt</p>
+            <p class="review-meta">Kakobuy purchase feedback excerpt · men’s long-sleeve textured shirt</p>
           </article>
           <article class="review-card">
             <span class="review-label">Fit note</span>
             <blockquote>“These are really nice men's shirts… medium fits him in this, so it runs a little big.”</blockquote>
-            <p class="review-meta">Third-party customer review excerpt · compare measurements before choosing a size</p>
+            <p class="review-meta">Kakobuy purchase feedback excerpt · compare measurements before choosing a size</p>
           </article>
           <article class="review-card review-card-caution">
             <span class="review-label">Caution excerpt</span>
             <blockquote>“The color… is not what I was going for… the materials do not feel comfy to the skin.”</blockquote>
-            <p class="review-meta">Third-party customer review excerpt · color and fabric feel can vary by expectation</p>
+            <p class="review-meta">Kakobuy purchase feedback excerpt · color and fabric feel can vary by expectation</p>
           </article>
           <article class="review-card">
             <span class="review-label">Construction note</span>
             <blockquote>“The sleeves are a bit long… The material is not very thick or warm.”</blockquote>
-            <p class="review-meta">Third-party customer review excerpt · check sleeve length and seasonality</p>
+            <p class="review-meta">Kakobuy purchase feedback excerpt · check sleeve length and seasonality</p>
           </article>
         </div>
-        <p class="review-source">Source note: excerpts are adapted from the customer-review text you supplied. The original marketplace, seller, listing, price, availability, and review status should be checked independently before publication or purchase.</p>
+        <p class="review-source">Source note: these excerpts were supplied as customer feedback after purchases through Kakobuy. They reflect individual experiences and should not be treated as a guarantee of fit, quality, authenticity, availability, delivery, or future results. This website is an independent information directory and does not process payments, place orders, or provide fulfillment services.</p>
       </div>
     </section>
 
