@@ -38,6 +38,12 @@
         Kakobuy Spreadsheet is an independent information directory. We organize product information and link to external resources, but we do not operate Google Sheets, control its content, process payments, manage orders, provide shipping, or verify products listed there. The external website may have its own information, pricing, availability, payment, delivery, and service policies.
       </p>
 
+      <div class="external-modal-legal">
+        <p>©kakobuylinki.com operates solely as an informational platform and does not sell, offer, or facilitate the sale of any products, either directly or indirectly. Our purpose is to provide users with a resource to browse, compare, and assess items available on various third-party marketplaces.</p>
+        <p>We do not have control over the authenticity, legality, safety, or quality of the products listed by these external sellers, and all such responsibility rests entirely with the sellers and the marketplaces themselves. Users are strongly encouraged to conduct their own due diligence, carefully review product details, and exercise caution when making purchases.</p>
+        <p>This website cannot be held liable for any counterfeit, misrepresented, defective, or otherwise unsatisfactory items obtained through these third-party channels, and any transactions or disputes are strictly between the buyer and the seller or platform.</p>
+      </div>
+
       <div class="external-modal-actions">
         <button class="external-modal-primary" type="button" @click="continueToExternal">
           Continue to Google Sheets
@@ -188,6 +194,19 @@ onBeforeUnmount(() => {
 .external-modal-destination p { margin: 4px 0; }
 .external-modal-destination code { color: #8b0000; font-weight: 700; }
 .external-modal-disclosure { color: #4b5563; }
+
+.external-modal-legal {
+  margin: 22px 0 0;
+  padding: 18px 20px;
+  border: 1px solid #e7e2d7;
+  border-radius: 10px;
+  background: #fbfaf7;
+  color: #5b5d62;
+  font-size: 13px;
+}
+
+.external-modal-legal p { margin: 0 0 10px; line-height: 1.65; }
+.external-modal-legal p:last-child { margin-bottom: 0; }
 
 .external-modal-actions {
   display: flex;

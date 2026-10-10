@@ -84,6 +84,30 @@
       </div>
     </section>
 
+    <section class="visual-section content-section">
+      <div class="section-shell">
+        <div class="section-heading compact-heading">
+          <div><p class="eyebrow">Visual reference</p><h2>See the context.<br /><em>Then check the source.</em></h2></div>
+          <p>These editorial images help you understand the categories and research context. They are not customer reviews, authenticity proof, or purchase guarantees.</p>
+        </div>
+        <div class="visual-grid">
+          <figure class="visual-card visual-card-large">
+            <img src="/images/sneakers-lifestyle-collection-us-01.webp" alt="Editorial footwear category reference" loading="lazy" width="800" height="560">
+            <figcaption><strong>01 / Footwear context</strong><span>Use category, material, fit, and source details together.</span></figcaption>
+          </figure>
+          <figure class="visual-card">
+            <img src="/images/clothing-wardrobe-organized-au-04.webp" alt="Editorial clothing organization reference" loading="lazy" width="800" height="560">
+            <figcaption><strong>02 / Clothing context</strong><span>Compare measurements and construction rather than labels alone.</span></figcaption>
+          </figure>
+          <figure class="visual-card">
+            <img src="/images/accessories-daily-carry-us-05.webp" alt="Editorial accessories category reference" loading="lazy" width="800" height="560">
+            <figcaption><strong>03 / Accessories context</strong><span>Check dimensions, compatibility, materials, and care notes.</span></figcaption>
+          </figure>
+        </div>
+        <div class="visual-integrity"><span>Editorial reference only</span> No fabricated testimonials, order counts, ratings, or “verified buyer” claims are used on this page.</div>
+      </div>
+    </section>
+
     <section class="process-section content-section">
       <div class="section-shell process-layout">
         <div class="section-heading process-heading">
@@ -173,10 +197,12 @@ const visibleGuideGroups = computed(() => guideGroups
 
 .guides-section { background: #f4f1eb; }.compact-heading { margin-bottom: 30px; }.text-link { color: #8b0000; font-size: 13px; font-weight: 800; text-decoration: none; }.text-link span { margin-left: 8px; }.guide-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid #cfc9c0; }.guide-card { display: grid; grid-template-columns: 52px 1fr 24px; align-items: center; gap: 8px; min-height: 72px; border-bottom: 1px solid #cfc9c0; color: #262626 !important; text-decoration: none; }.guide-card:nth-child(odd) { border-right: 1px solid #cfc9c0; padding-right: 30px; }.guide-card:nth-child(even) { padding-left: 30px; }.guide-card:hover { color: #8b0000 !important; }.guide-index { color: #938e86; font-size: 11px; }.guide-title { font-size: 15px; font-weight: 750; }.guide-arrow { color: #8b0000; font-size: 18px; }
 
+.visual-section { background: #fff; }.visual-grid { display: grid; grid-template-columns: 1.35fr 1fr 1fr; gap: 14px; }.visual-card { margin: 0; overflow: hidden; border: 1px solid #ddd8cf; background: #f8f6f2; }.visual-card img { display: block; width: 100%; aspect-ratio: 1.35; object-fit: cover; filter: saturate(.82); }.visual-card-large img { aspect-ratio: 1.6; }.visual-card figcaption { display: grid; gap: 7px; padding: 16px 17px 18px; }.visual-card figcaption strong { color: #8b0000; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }.visual-card figcaption span { color: #5e5b56; font-size: 13px; line-height: 1.5; }.visual-integrity { margin-top: 18px; color: #716d67; font-size: 12px; }.visual-integrity span { margin-right: 10px; color: #8b0000; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+
 .process-section { background: #fff; }.process-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 100px; }.process-heading { display: block; margin: 0; }.process-heading > p { margin-top: 28px; }.process-list { border-top: 1px solid #d5d0c8; }.process-row { display: grid; grid-template-columns: 58px 1fr; gap: 20px; padding: 24px 0; border-bottom: 1px solid #d5d0c8; }.process-row > span { color: #8b0000; font-size: 12px; font-weight: 800; }.process-row h3 { margin: 0 0 6px; font-size: 18px; }.process-row p { margin: 0; color: #706d68; font-size: 13px; line-height: 1.55; }
 
 .disclosure-section { padding: 76px 0; background: #d4af37; }.disclosure-shell { display: grid; grid-template-columns: .8fr 1.2fr; gap: 100px; align-items: center; }.disclosure-shell h2 { margin: 0; color: #1d1d1d; font-size: clamp(34px, 4vw, 54px); line-height: .98; letter-spacing: -.055em; }.disclosure-copy p { max-width: 560px; margin: 0 0 22px; color: #39362d; font-size: 15px; line-height: 1.7; }.disclosure-link { color: #8b0000 !important; font-size: 13px; font-weight: 850; text-decoration: none; }.disclosure-link span { margin-left: 12px; }
 
 @media (max-width: 900px) { .hero-shell, .process-layout, .disclosure-shell { grid-template-columns: 1fr; gap: 54px; }.hero-panel { max-width: 620px; width: 100%; justify-self: center; }.category-grid { grid-template-columns: repeat(2, 1fr); }.trust-shell { grid-template-columns: repeat(3, 1fr); }.trust-item-wide { grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,.22); border-right: 0; } }
-@media (max-width: 620px) { .section-shell, .hero-shell, .trust-shell { width: min(100% - 32px, 1180px); }.directory-hero { padding: 48px 0 46px; }.hero-copy h1 { font-size: 60px; }.hero-lede { font-size: 16px; }.hero-actions { align-items: stretch; flex-direction: column; }.hero-actions a { width: 100%; }.hero-panel { box-shadow: 9px 9px 0 #d4af37; }.panel-content { padding: 28px 22px; }.trust-shell { grid-template-columns: repeat(3, 1fr); }.trust-item { min-height: 88px; padding: 14px 10px; }.trust-item strong { font-size: 21px; }.trust-item span { font-size: 9px; letter-spacing: .03em; }.content-section { padding: 72px 0; }.section-heading { display: block; margin-bottom: 30px; }.section-heading > p { margin-top: 22px; }.category-grid { grid-template-columns: 1fr 1fr; gap: 9px; }.category-card { min-height: 250px; padding: 17px; }.card-mark { margin: 24px 0 16px; }.category-card h3 { font-size: 17px; }.category-card p { font-size: 12px; }.guide-grid { grid-template-columns: 1fr; }.guide-card:nth-child(odd) { border-right: 0; padding-right: 0; }.guide-card:nth-child(even) { padding-left: 0; }.process-layout, .disclosure-shell { gap: 34px; }.disclosure-section { padding: 58px 0; } }
+@media (max-width: 620px) { .section-shell, .hero-shell, .trust-shell { width: min(100% - 32px, 1180px); }.directory-hero { padding: 48px 0 46px; }.hero-copy h1 { font-size: 60px; }.hero-lede { font-size: 16px; }.hero-actions { align-items: stretch; flex-direction: column; }.hero-actions a { width: 100%; }.hero-panel { box-shadow: 9px 9px 0 #d4af37; }.panel-content { padding: 28px 22px; }.trust-shell { grid-template-columns: repeat(3, 1fr); }.trust-item { min-height: 88px; padding: 14px 10px; }.trust-item strong { font-size: 21px; }.trust-item span { font-size: 9px; letter-spacing: .03em; }.content-section { padding: 72px 0; }.section-heading { display: block; margin-bottom: 30px; }.section-heading > p { margin-top: 22px; }.category-grid { grid-template-columns: 1fr 1fr; gap: 9px; }.category-card { min-height: 250px; padding: 17px; }.card-mark { margin: 24px 0 16px; }.category-card h3 { font-size: 17px; }.category-card p { font-size: 12px; }.visual-grid { grid-template-columns: 1fr; gap: 12px; }.visual-card-large img, .visual-card img { aspect-ratio: 1.5; }.guide-grid { grid-template-columns: 1fr; }.guide-card:nth-child(odd) { border-right: 0; padding-right: 0; }.guide-card:nth-child(even) { padding-left: 0; }.process-layout, .disclosure-shell { gap: 34px; }.disclosure-section { padding: 58px 0; } }
 </style>
