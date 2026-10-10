@@ -20,7 +20,7 @@ You selected an external spreadsheet resource. Please review the destination bef
 Kakobuy Spreadsheet is an independent information directory. We organize product information and link to external resources, but we do not operate Google Sheets, control its content, process payments, manage orders, provide shipping, or verify products listed there. The external website may have its own information, pricing, availability, payment, delivery, and service policies.
 
 <div class="external-resource-actions">
-  <a class="external-resource-primary" href="https://docs.google.com/spreadsheets/d/10e9euL3y7Bw7GvWUhX2FruG8mJWXz8C7eNwTo69XoQA/edit?gid=1903531254#gid=1903531254" target="_blank" rel="nofollow noopener noreferrer">Continue to Google Sheets</a>
+  <a class="external-resource-primary" href="/external-resource" target="_blank" rel="nofollow noopener noreferrer">Continue to Google Sheets</a>
   <a class="external-resource-secondary" href="/">Return to Resource Directory</a>
 </div>
 

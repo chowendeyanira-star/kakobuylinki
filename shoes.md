@@ -8,7 +8,7 @@ import { siteConfig } from './.vitepress/theme/site-config.js'
 import CategoryContent from './.vitepress/theme/components/CategoryContent.vue'
 
 const shoesCategory = siteConfig.categories.find(c => c.id === 'shoes')
-const spreadsheetLink = 'https://docs.google.com/spreadsheets/d/10e9euL3y7Bw7GvWUhX2FruG8mJWXz8C7eNwTo69XoQA/edit?gid=1903531254#gid=1903531254'
+const spreadsheetLink = '/external-resource'
 
 const productTypes = [
   {

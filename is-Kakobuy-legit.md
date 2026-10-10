@@ -6,7 +6,7 @@ description: "Comprehensive review of Kakobuy Spreadsheet legitimacy in 2026. Le
 
 # Is Kakobuy Spreadsheet Legit 2026: Complete Trust & Safety Review
 
-<a href="https://docs.google.com/spreadsheets/d/10e9euL3y7Bw7GvWUhX2FruG8mJWXz8C7eNwTo69XoQA/edit?gid=1903531254#gid=1903531254" target="_blank" rel="nofollow noopener noreferrer">Access Kakobuy Spreadsheet</a>
+<a href="/external-resource" target="_blank" rel="nofollow noopener noreferrer">Access Kakobuy Spreadsheet</a>
 
 > *Note: All prices are approximate and may fluctuate due to market conditions and availability.*
 
@@ -76,7 +76,7 @@ Smart users verify legitimacy claims independently. Here are proven methods to c
 
 ### Browse the Spreadsheet Directly
 
-The most direct verification method is to access the [Kakobuy Spreadsheet](https://docs.google.com/spreadsheets/d/10e9euL3y7Bw7GvWUhX2FruG8mJWXz8C7eNwTo69XoQA/edit?gid=1903531254#gid=1903531254) and evaluate the information quality yourself. Check the organization, detail level, and accuracy of product listings.
+The most direct verification method is to access the [Kakobuy Spreadsheet](/external-resource) and evaluate the information quality yourself. Check the organization, detail level, and accuracy of product listings.
 
 ### Review Community Feedback
 
