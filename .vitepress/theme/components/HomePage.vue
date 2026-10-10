@@ -1,162 +1,109 @@
 <template>
   <div class="home-page">
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-bg">
-        <picture>
-          <source srcset="/images/hero-480w.webp 480w, /images/hero-768w.webp 768w, /images/hero-1200w.webp 1200w" sizes="100vw" type="image/webp">
-          <img src="/images/hero-1200w.webp" alt="Men's fashion streetwear collection featuring hoodies, sneakers and urban style" fetchpriority="high" loading="eager" decoding="async" width="1200" height="675">
-        </picture>
-      </div>
-      <div class="hero-overlay"></div>
-      <div class="hero-inner">
-        <h1 class="hero-title">Kakobuy Product Directory</h1>
-        <p class="hero-subtitle">Organized categories and external spreadsheet resources</p>
-        <p class="hero-desc">Explore organized product information, category guides, and clearly disclosed external resources. Kakobuy Spreadsheet is an independent information directory, not a store or fulfillment service.</p>
-        <!-- CTA Buttons -->
-        <div class="hero-cta-group">
-          <div class="hero-cta-item">
-            <span class="cta-label">External resource</span>
-            <a href="/external-resource" class="cta-btn cta-spreadsheet">Review Spreadsheet Resource</a>
+    <section class="directory-hero">
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent product directory</p>
+          <h1>Kakobuy<br /><span>Spreadsheet</span></h1>
+          <p class="hero-lede">
+            A focused starting point for category research, sizing notes, and clearly disclosed external spreadsheet resources.
+          </p>
+          <div class="hero-actions">
+            <a href="/external-resource" class="primary-action cta-spreadsheet">Review Spreadsheet Resource</a>
+            <a href="/blog/kakobuy-start-here/" class="secondary-action">Start with the directory</a>
           </div>
-          <div class="hero-cta-item">
-            <span class="cta-label">Site information</span>
-            <a href="/blog/about/" class="cta-btn cta-shopping">Read About This Directory</a>
+          <p class="hero-note">No store, payment service, warehouse, inspection service, or delivery operation.</p>
+        </div>
+
+        <div class="hero-panel" aria-label="Directory overview">
+          <div class="panel-window-bar"><span></span><span></span><span></span><strong>DIRECTORY / 01</strong></div>
+          <div class="panel-content">
+            <p class="panel-kicker">Browse by purpose</p>
+            <h2>Find a useful starting point.</h2>
+            <div class="panel-list">
+              <a href="/shoes/" class="panel-row"><span class="panel-index">01</span><span>Shoes and footwear</span><span>→</span></a>
+              <a href="/clothes/" class="panel-row"><span class="panel-index">02</span><span>Clothes and fit</span><span>→</span></a>
+              <a href="/hats/" class="panel-row"><span class="panel-index">03</span><span>Accessories and style</span><span>→</span></a>
+              <a href="/blog/kakobuy-source-review/" class="panel-row"><span class="panel-index">04</span><span>Source review</span><span>→</span></a>
+            </div>
+            <div class="panel-footer"><span class="status-dot"></span> Read the source before you continue</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Explore Categories -->
-    <section class="categories-section">
-      <div class="container">
-        <h2 class="section-title">Explore Categories</h2>
-        <p class="section-desc">Browse curated men's fashion categories with detailed guides, sizing tips, and product information.</p>
+    <section class="trust-strip" aria-label="Directory facts">
+      <div class="trust-shell">
+        <div class="trust-item"><strong>10</strong><span>core guides</span></div>
+        <div class="trust-item"><strong>01</strong><span>clear external notice</span></div>
+        <div class="trust-item"><strong>100%</strong><span>independent scope</span></div>
+        <div class="trust-item trust-item-wide"><strong>→</strong><span>Compare information, then verify at the original source.</span></div>
+      </div>
+    </section>
+
+    <section class="categories-section content-section">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div><p class="eyebrow">Browse the directory</p><h2>Shop by category.<br /><em>Research by detail.</em></h2></div>
+          <p>Start with the category that matches your question. Each path keeps the comparison fields and external responsibility clear.</p>
+        </div>
         <div class="category-grid">
-          <a
-            v-for="cat in categories"
-            :key="cat.id"
-            :href="`/${cat.id}/`"
-            class="category-card"
-          >
-            <div class="cat-icon">{{ cat.icon }}</div>
+          <a v-for="(cat, index) in categories" :key="cat.id" :href="`/${cat.id}/`" class="category-card">
+            <span class="card-number">0{{ index + 1 }}</span>
+            <div class="card-mark">{{ cat.name.slice(0, 1) }}</div>
             <h3>{{ cat.name }}</h3>
             <p>{{ cat.description }}</p>
+            <span class="card-link">Explore category <b>↗</b></span>
+          </a>
+          <a href="/blog/kakobuy-sizing-guide/" class="category-card category-card-featured">
+            <span class="card-number">04</span>
+            <div class="card-mark">S</div>
+            <h3>Sizing & materials</h3>
+            <p>Use measurements and construction notes instead of labels alone.</p>
+            <span class="card-link">Read the guide <b>↗</b></span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- How It Works -->
-    <section class="how-it-works">
-      <div class="container">
-        <h2 class="section-title">How It Works</h2>
-        <p class="section-desc">Research product information in four transparent steps.</p>
-        <div class="steps-grid">
-          <div class="step-card">
-            <div class="step-number">1</div>
-            <h3>Browse Categories</h3>
-            <p>Explore organized fashion categories from sneakers and hoodies to bags and accessories.</p>
-          </div>
-          <div class="step-card">
-            <div class="step-number">2</div>
-            <h3>Find Products</h3>
-            <p>Discover curated collections with pricing references, material details, and style information.</p>
-          </div>
-          <div class="step-card">
-            <div class="step-number">3</div>
-            <h3>Check Details</h3>
-            <p>Review product specifications, sizing guides, and quality information before making a decision.</p>
-          </div>
-          <div class="step-card">
-            <div class="step-number">4</div>
-            <h3>Review External Resource</h3>
-            <p>Read the destination notice and choose whether to continue to the disclosed third-party spreadsheet.</p>
-          </div>
+    <section class="guides-section content-section">
+      <div class="section-shell">
+        <div class="section-heading compact-heading">
+          <div><p class="eyebrow">The core library</p><h2>Ten useful chapters.<br /><em>No content maze.</em></h2></div>
+          <a href="/blog/" class="text-link">View all guides <span>↗</span></a>
+        </div>
+        <div class="guide-grid">
+          <template v-for="group in visibleGuideGroups" :key="group.title">
+            <a v-for="(article, index) in group.articles" :key="article.link" :href="article.link" class="guide-card">
+              <span class="guide-index">{{ String(index + 1).padStart(2, '0') }}</span>
+              <span class="guide-title">{{ article.title }}</span>
+              <span class="guide-arrow">↗</span>
+            </a>
+          </template>
         </div>
       </div>
     </section>
 
-    <!-- Why Choose Us -->
-    <section class="why-section">
-      <div class="container">
-        <h2 class="section-title">Why Choose Us</h2>
-        <div class="why-grid">
-          <div class="why-card">
-            <div class="why-icon">&#10003;</div>
-            <h3>Curated Fashion Categories</h3>
-            <p>Organized sections covering sneakers, clothing, accessories, and other product information.</p>
-          </div>
-          <div class="why-card">
-            <div class="why-icon">&#10003;</div>
-            <h3>Updated Collections</h3>
-            <p>Regularly refreshed product listings with the latest trends, new arrivals, and seasonal picks.</p>
-          </div>
-          <div class="why-card">
-            <div class="why-icon">&#10003;</div>
-            <h3>Organized Categories</h3>
-            <p>Clear category structure makes it easy to find exactly what you are looking for without endless searching.</p>
-          </div>
-          <div class="why-card">
-            <div class="why-icon">&#10003;</div>
-            <h3>Easy Product Search</h3>
-            <p>Standardized product information with pricing, materials, and specifications for quick comparison.</p>
-          </div>
-          <div class="why-card">
-            <div class="why-icon">&#10003;</div>
-            <h3>Clear Source Disclosure</h3>
-            <p>External resources show their destination and operate under their own information, pricing, payment, and service policies.</p>
-          </div>
+    <section class="process-section content-section">
+      <div class="section-shell process-layout">
+        <div class="section-heading process-heading">
+          <div><p class="eyebrow">A transparent path</p><h2>Simple steps.<br /><em>Clear boundaries.</em></h2></div>
+          <p>The directory helps you organize research. The original destination remains responsible for its own content and terms.</p>
+        </div>
+        <div class="process-list">
+          <div class="process-row"><span>01</span><div><h3>Choose a category</h3><p>Begin with shoes, clothes, accessories, or sizing and materials.</p></div></div>
+          <div class="process-row"><span>02</span><div><h3>Compare the stated details</h3><p>Record measurements, materials, dates, and what is still unknown.</p></div></div>
+          <div class="process-row"><span>03</span><div><h3>Review the source notice</h3><p>Open the disclosed third-party resource only after checking its domain and policies.</p></div></div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section">
-      <div class="container">
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <div class="faq-list">
-          <details class="faq-item" open>
-            <summary>What is the fashion spreadsheet?</summary>
-            <p>The fashion spreadsheet is a curated product directory that organizes thousands of men's fashion items into easy-to-browse categories. It includes pricing references, material details, and style information for sneakers, clothing, accessories, and more.</p>
-          </details>
-          <details class="faq-item">
-            <summary>How often are collections updated?</summary>
-            <p>Our collections are regularly updated with new arrivals, seasonal picks, and trending items. We review and refresh product listings to ensure accuracy and keep up with the latest fashion trends.</p>
-          </details>
-          <details class="faq-item">
-            <summary>How can I find products?</summary>
-            <p>Browse by category using the navigation above, or access the full spreadsheet catalog for detailed product listings. Each category page provides an overview with pricing references and key specifications.</p>
-          </details>
-          <details class="faq-item">
-            <summary>How do I check product details?</summary>
-            <p>Each product listing includes standardized information: pricing references, material composition, available sizes, and design features. Use our sizing guides for fit recommendations across different brands and styles.</p>
-          </details>
-          <details class="faq-item">
-            <summary>How do external resources work?</summary>
-            <p>Select the spreadsheet resource to review its destination notice first. You can return to this directory or actively choose to continue to the disclosed third-party website. No automatic redirect or download occurs.</p>
-          </details>
-          <details class="faq-item">
-            <summary>What does this site provide?</summary>
-            <p>This site organizes product information, category guides, and links to external resources. It does not process payments, manage orders, provide shipping, inspect products, or control third-party content.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured Articles / Blog -->
-    <section class="blog-section">
-      <div class="container">
-        <h2 class="section-title">Featured Guides</h2>
-        <div class="article-nav-grid">
-          <div v-for="group in visibleGuideGroups" :key="group.title" class="article-nav-group">
-            <h3 class="group-title">{{ group.title }}</h3>
-            <ul class="article-nav-list">
-              <li v-for="article in group.articles" :key="article.link">
-                <a :href="article.link">{{ article.title }}</a>
-              </li>
-            </ul>
-          </div>
+    <section class="disclosure-section">
+      <div class="section-shell disclosure-shell">
+        <div><p class="eyebrow">Before you continue</p><h2>This is a directory,<br />not a checkout.</h2></div>
+        <div class="disclosure-copy">
+          <p>Kakobuy Spreadsheet organizes product information and links to external resources. It does not process payments, place orders, operate a warehouse, inspect products, arrange delivery, or guarantee authenticity, availability, pricing, or returns.</p>
+          <a href="/external-resource" class="disclosure-link">Read the external resource notice <span>→</span></a>
         </div>
       </div>
     </section>
@@ -195,484 +142,41 @@ const visibleGuideGroups = computed(() => guideGroups
 </script>
 
 <style scoped>
-.home-page {
-  min-height: 100vh;
-}
+.home-page { min-height: 100vh; background: #f4f1eb; color: #171717; }
+.section-shell, .hero-shell, .trust-shell { width: min(1180px, calc(100% - 48px)); margin: 0 auto; }
+.eyebrow { margin: 0 0 14px; color: #8b0000; font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+.directory-hero { padding: 74px 0 62px; background: #f4f1eb; }
+.hero-shell { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr); gap: 72px; align-items: center; }
+.hero-copy h1 { margin: 0; font-size: clamp(52px, 7vw, 98px); letter-spacing: -.07em; line-height: .9; font-weight: 850; }
+.hero-copy h1 span { color: #8b0000; }
+.hero-lede { max-width: 550px; margin: 28px 0 28px; color: #4b4b4b; font-size: 19px; line-height: 1.55; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.hero-actions a { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; padding: 12px 18px; border-radius: 5px; font-size: 14px; font-weight: 800; text-decoration: none; }
+.primary-action { background: #8b0000; color: #fff !important; box-shadow: 0 8px 20px rgba(139,0,0,.18); }
+.primary-action:hover { background: #690000; transform: translateY(-2px); }
+.secondary-action { border: 1px solid #b6b0a7; color: #292929 !important; background: transparent; }
+.secondary-action:hover { border-color: #8b0000; color: #8b0000 !important; }
+.hero-note { margin: 18px 0 0; color: #77716b; font-size: 12px; }
 
-/* ===== Hero ===== */
-.hero {
-  position: relative;
-  min-height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
+.hero-panel { min-height: 390px; border: 1px solid #292929; background: #1d1d1d; color: #fff; box-shadow: 18px 18px 0 #d4af37; transform: rotate(1deg); }
+.panel-window-bar { display: flex; align-items: center; gap: 7px; height: 42px; padding: 0 18px; border-bottom: 1px solid #484848; color: #aaa; font-size: 10px; letter-spacing: .12em; }
+.panel-window-bar span { width: 8px; height: 8px; border-radius: 50%; background: #8b0000; }
+.panel-window-bar span:nth-child(2) { background: #d4af37; }.panel-window-bar span:nth-child(3) { background: #76806e; }.panel-window-bar strong { margin-left: auto; font-weight: 700; }
+.panel-content { padding: 35px 32px; }.panel-kicker { margin: 0 0 10px; color: #d4af37; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }.panel-content h2 { max-width: 280px; margin: 0 0 28px; font-size: 32px; line-height: 1.05; letter-spacing: -.04em; }
+.panel-list { border-top: 1px solid #4b4b4b; }.panel-row { display: grid; grid-template-columns: 36px 1fr 20px; gap: 8px; align-items: center; padding: 15px 0; border-bottom: 1px solid #4b4b4b; color: #fff !important; font-size: 14px; text-decoration: none; }.panel-row:hover { color: #d4af37 !important; }.panel-index { color: #9c9c9c; font-size: 11px; }.panel-footer { margin-top: 25px; color: #b4b4b4; font-size: 11px; }.status-dot { display: inline-block; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%; background: #7ca36c; }
 
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
+.trust-strip { background: #8b0000; color: #fff; }.trust-shell { display: grid; grid-template-columns: repeat(3, 1fr) 1.7fr; }.trust-item { display: flex; min-height: 96px; flex-direction: column; justify-content: center; padding: 18px 24px; border-right: 1px solid rgba(255,255,255,.22); }.trust-item strong { font-size: 27px; letter-spacing: -.04em; }.trust-item span { margin-top: 3px; color: #f1d9d9; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }.trust-item-wide { border-right: 0; flex-direction: row; align-items: center; gap: 14px; }.trust-item-wide strong { color: #d4af37; }
 
-.hero-bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
+.content-section { padding: 104px 0; }.categories-section { background: #fff; }.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 44px; }.section-heading h2 { margin: 0; font-size: clamp(34px, 4vw, 54px); line-height: .98; letter-spacing: -.055em; }.section-heading h2 em { color: #8b0000; font-style: normal; }.section-heading > p { max-width: 360px; margin: 0 0 4px; color: #6c6a66; font-size: 14px; line-height: 1.65; }
+.category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }.category-card { position: relative; min-height: 280px; display: flex; flex-direction: column; padding: 24px; border: 1px solid #ddd8cf; background: #f8f6f2; color: #171717 !important; text-decoration: none; transition: transform .2s ease, background .2s ease, border-color .2s ease; }.category-card:hover { transform: translateY(-5px); border-color: #8b0000; background: #fff; }.category-card-featured { background: #1d1d1d; color: #fff !important; border-color: #1d1d1d; }.card-number { color: #8b0000; font-size: 11px; font-weight: 800; letter-spacing: .12em; }.category-card-featured .card-number { color: #d4af37; }.card-mark { width: 54px; height: 54px; display: grid; place-items: center; margin: 34px 0 22px; border: 1px solid currentColor; border-radius: 50%; font-size: 22px; font-weight: 850; }.category-card h3 { margin: 0 0 12px; font-size: 21px; letter-spacing: -.04em; }.category-card p { margin: 0; color: #6d6a65; font-size: 13px; line-height: 1.55; }.category-card-featured p { color: #c5c2bd; }.card-link { display: flex; justify-content: space-between; margin-top: auto; padding-top: 22px; color: #8b0000; font-size: 12px; font-weight: 800; }.category-card-featured .card-link { color: #d4af37; }
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(26,26,46,0.85) 0%, rgba(15,52,96,0.75) 100%);
-  z-index: 1;
-}
+.guides-section { background: #f4f1eb; }.compact-heading { margin-bottom: 30px; }.text-link { color: #8b0000; font-size: 13px; font-weight: 800; text-decoration: none; }.text-link span { margin-left: 8px; }.guide-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid #cfc9c0; }.guide-card { display: grid; grid-template-columns: 52px 1fr 24px; align-items: center; gap: 8px; min-height: 72px; border-bottom: 1px solid #cfc9c0; color: #262626 !important; text-decoration: none; }.guide-card:nth-child(odd) { border-right: 1px solid #cfc9c0; padding-right: 30px; }.guide-card:nth-child(even) { padding-left: 30px; }.guide-card:hover { color: #8b0000 !important; }.guide-index { color: #938e86; font-size: 11px; }.guide-title { font-size: 15px; font-weight: 750; }.guide-arrow { color: #8b0000; font-size: 18px; }
 
-.hero-inner {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 80px 20px;
-  text-align: center;
-}
+.process-section { background: #fff; }.process-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 100px; }.process-heading { display: block; margin: 0; }.process-heading > p { margin-top: 28px; }.process-list { border-top: 1px solid #d5d0c8; }.process-row { display: grid; grid-template-columns: 58px 1fr; gap: 20px; padding: 24px 0; border-bottom: 1px solid #d5d0c8; }.process-row > span { color: #8b0000; font-size: 12px; font-weight: 800; }.process-row h3 { margin: 0 0 6px; font-size: 18px; }.process-row p { margin: 0; color: #706d68; font-size: 13px; line-height: 1.55; }
 
-.hero-title {
-  font-size: 52px;
-  font-weight: 800;
-  color: #d4af37;
-  margin-bottom: 12px;
-  letter-spacing: -1px;
-  line-height: 1.15;
-}
+.disclosure-section { padding: 76px 0; background: #d4af37; }.disclosure-shell { display: grid; grid-template-columns: .8fr 1.2fr; gap: 100px; align-items: center; }.disclosure-shell h2 { margin: 0; color: #1d1d1d; font-size: clamp(34px, 4vw, 54px); line-height: .98; letter-spacing: -.055em; }.disclosure-copy p { max-width: 560px; margin: 0 0 22px; color: #39362d; font-size: 15px; line-height: 1.7; }.disclosure-link { color: #8b0000 !important; font-size: 13px; font-weight: 850; text-decoration: none; }.disclosure-link span { margin-left: 12px; }
 
-.hero-subtitle {
-  font-size: 22px;
-  color: #fff;
-  font-weight: 500;
-  margin-bottom: 16px;
-}
-
-.hero-desc {
-  font-size: 16px;
-  color: rgba(255,255,255,0.8);
-  line-height: 1.7;
-  max-width: 560px;
-  margin: 0 auto 32px;
-}
-
-/* CTA Group */
-.hero-cta-group {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-
-.hero-cta-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-
-.cta-label {
-  font-size: 12px;
-  font-weight: 600;
-  color: rgba(255,255,255,0.6);
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-.cta-btn {
-  display: inline-block;
-  padding: 16px 36px;
-  border-radius: 12px;
-  font-size: 17px;
-  font-weight: 700;
-  text-decoration: none;
-  text-align: center;
-  transition: all 0.3s ease;
-  letter-spacing: 0.3px;
-  line-height: 1.4;
-}
-
-.cta-spreadsheet {
-  background: #8B0000;
-  color: #ffffff;
-  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.4);
-}
-
-.cta-spreadsheet:hover {
-  background: #a00000;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(139, 0, 0, 0.5);
-}
-
-.cta-shopping {
-  background: #d4af37;
-  color: #ffffff;
-  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
-}
-
-.cta-shopping:hover {
-  background: #c4a030;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
-}
-
-/* ===== Section Common ===== */
-.section-title {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 16px;
-}
-
-.section-desc {
-  text-align: center;
-  font-size: 16px;
-  color: #666;
-  line-height: 1.7;
-  max-width: 640px;
-  margin: 0 auto 40px;
-}
-
-/* ===== Categories ===== */
-.categories-section {
-  padding: 64px 0;
-  background: #fff;
-}
-
-.category-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.category-card {
-  display: block;
-  background: #fafafa;
-  border: 1px solid #eee;
-  border-radius: 16px;
-  padding: 28px 24px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  text-align: center;
-}
-
-.category-card:hover {
-  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-  transform: translateY(-4px);
-  border-color: #d4af37;
-}
-
-.cat-icon {
-  font-size: 36px;
-  margin-bottom: 12px;
-}
-
-.category-card h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 8px;
-}
-
-.category-card p {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* ===== How It Works ===== */
-.how-it-works {
-  padding: 64px 0;
-  background: #fff;
-}
-
-.steps-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-}
-
-.step-card {
-  background: #fafafa;
-  border: 1px solid #eee;
-  border-radius: 16px;
-  padding: 28px 22px;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.step-card:hover {
-  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-  transform: translateY(-4px);
-  border-color: #d4af37;
-}
-
-.step-number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background: linear-gradient(135deg, #1a1a2e, #0f3460);
-  color: #d4af37;
-  border-radius: 50%;
-  font-size: 20px;
-  font-weight: 800;
-  margin-bottom: 16px;
-}
-
-.step-card h3 {
-  font-size: 17px;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 10px;
-}
-
-.step-card p {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.7;
-  margin: 0;
-}
-
-/* ===== Why Choose Us ===== */
-.why-section {
-  padding: 64px 0;
-  background: #f8f9fa;
-}
-
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.why-card {
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 16px;
-  padding: 28px 24px;
-  transition: all 0.3s ease;
-}
-
-.why-card:hover {
-  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-  transform: translateY(-4px);
-  border-color: #d4af37;
-}
-
-.why-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, #1a1a2e, #0f3460);
-  color: #d4af37;
-  border-radius: 50%;
-  font-size: 18px;
-  font-weight: 800;
-  margin-bottom: 14px;
-}
-
-.why-card h3 {
-  font-size: 17px;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 8px;
-}
-
-.why-card p {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.7;
-  margin: 0;
-}
-
-/* ===== FAQ ===== */
-.faq-section {
-  padding: 64px 0;
-  background: #fff;
-}
-
-.faq-list {
-  max-width: 800px;
-  margin: 0 auto;
-  display: grid;
-  gap: 16px;
-}
-
-.faq-item {
-  background: #fafafa;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: border-color 0.2s ease-out, box-shadow 0.2s ease-out;
-}
-
-.faq-item:hover,
-.faq-item:focus-within {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-  border-color: #d4af37;
-}
-
-.faq-item summary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 20px 22px;
-  color: #1a1a1a;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 700;
-  list-style: none;
-}
-
-.faq-item summary::-webkit-details-marker {
-  display: none;
-}
-
-.faq-item summary::after {
-  color: #8b0000;
-  content: '+';
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1;
-}
-
-.faq-item[open] summary::after {
-  content: '−';
-}
-
-.faq-item summary:focus-visible {
-  outline: 3px solid #0f3460;
-  outline-offset: -3px;
-}
-
-.faq-item p {
-  padding: 0 22px 22px;
-  margin: 0;
-  color: #555;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-/* ===== Blog / Featured Articles ===== */
-.blog-section {
-  padding: 64px 0;
-  background: #f8f9fa;
-}
-
-.article-nav-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
-}
-
-.article-nav-group {
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 16px;
-  padding: 24px 22px;
-}
-
-.group-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 14px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #d4af37;
-}
-
-.article-nav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.article-nav-list li {
-  margin-bottom: 8px;
-}
-
-.article-nav-list a {
-  font-size: 14px;
-  color: #555;
-  text-decoration: none;
-  line-height: 1.5;
-  transition: all 0.3s ease;
-  display: block;
-  padding: 4px 8px;
-  border-radius: 6px;
-}
-
-.article-nav-list a:hover {
-  color: #8b0000;
-  background: rgba(139, 0, 0, 0.05);
-  padding-left: 14px;
-}
-
-/* ===== Keyboard and motion accessibility ===== */
-.cta-btn:focus-visible,
-.category-card:focus-visible,
-.article-nav-list a:focus-visible {
-  outline: 3px solid #0f3460;
-  outline-offset: 4px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .cta-btn,
-  .category-card,
-  .step-card,
-  .why-card,
-  .faq-item,
-  .article-nav-list a {
-    transition: none;
-  }
-
-  .cta-btn:hover,
-  .category-card:hover,
-  .step-card:hover,
-  .why-card:hover {
-    transform: none;
-  }
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  .hero { min-height: 500px; }
-  .hero-inner { padding: 60px 20px; }
-  .hero-title { font-size: 34px; }
-  .hero-subtitle { font-size: 18px; }
-  .hero-cta-group { gap: 20px; }
-  .cta-btn { padding: 14px 28px; font-size: 15px; }
-  .section-title { font-size: 24px; }
-  .category-grid { grid-template-columns: 1fr; }
-  .steps-grid { grid-template-columns: repeat(2, 1fr); }
-  .why-grid { grid-template-columns: 1fr; }
-  .article-nav-grid { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 480px) {
-  .hero-title { font-size: 28px; }
-  .hero-cta-group { flex-direction: column; align-items: center; }
-  .trending-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .trending-info { padding: 12px 14px; }
-  .trending-info h3 { font-size: 13px; }
-}
+@media (max-width: 900px) { .hero-shell, .process-layout, .disclosure-shell { grid-template-columns: 1fr; gap: 54px; }.hero-panel { max-width: 620px; width: 100%; justify-self: center; }.category-grid { grid-template-columns: repeat(2, 1fr); }.trust-shell { grid-template-columns: repeat(3, 1fr); }.trust-item-wide { grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,.22); border-right: 0; } }
+@media (max-width: 620px) { .section-shell, .hero-shell, .trust-shell { width: min(100% - 32px, 1180px); }.directory-hero { padding: 48px 0 46px; }.hero-copy h1 { font-size: 60px; }.hero-lede { font-size: 16px; }.hero-actions { align-items: stretch; flex-direction: column; }.hero-actions a { width: 100%; }.hero-panel { box-shadow: 9px 9px 0 #d4af37; }.panel-content { padding: 28px 22px; }.trust-shell { grid-template-columns: repeat(3, 1fr); }.trust-item { min-height: 88px; padding: 14px 10px; }.trust-item strong { font-size: 21px; }.trust-item span { font-size: 9px; letter-spacing: .03em; }.content-section { padding: 72px 0; }.section-heading { display: block; margin-bottom: 30px; }.section-heading > p { margin-top: 22px; }.category-grid { grid-template-columns: 1fr 1fr; gap: 9px; }.category-card { min-height: 250px; padding: 17px; }.card-mark { margin: 24px 0 16px; }.category-card h3 { font-size: 17px; }.category-card p { font-size: 12px; }.guide-grid { grid-template-columns: 1fr; }.guide-card:nth-child(odd) { border-right: 0; padding-right: 0; }.guide-card:nth-child(even) { padding-left: 0; }.process-layout, .disclosure-shell { gap: 34px; }.disclosure-section { padding: 58px 0; } }
 </style>
