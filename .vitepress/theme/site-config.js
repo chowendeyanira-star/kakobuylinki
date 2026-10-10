@@ -8,8 +8,8 @@ export const siteConfig = {
   // ---- Brand ----
   brand: {
     name: 'Kakobuy Spreadsheet',
-    tagline: 'Independent Product Directory & Resource Guide',
-    description: 'Independent product directory that organizes product information, category guides, and links to external spreadsheet resources.',
+    tagline: 'Independent Men’s Clothing Directory & Resource Guide',
+    description: 'Independent men’s clothing directory that organizes product information, fit notes, category guides, and links to external spreadsheet resources.',
     primaryColor: '#8B0000',
     accentColor: '#d4af37',
     logoText: 'Kakobuy Spreadsheet',
@@ -35,16 +35,16 @@ export const siteConfig = {
     },
     {
       id: 'clothes',
-      name: 'Clothes',
+      name: 'Men’s Clothing',
       icon: '',
-      description: 'Streetwear, hoodies, jackets, pants and more. Build your wardrobe from the ground up.',
+      description: 'Men’s shirts, hoodies, jackets, pants and everyday layers. Compare fit, fabric, construction, and care notes.',
       blogLink: '/blog/kakobuy-clothes-guide/',
     },
     {
       id: 'hats',
-      name: 'Hats',
+      name: 'Accessories',
       icon: '',
-      description: 'Snapbacks, beanies, bucket hats and fitted caps. The finishing touch to any look.',
+      description: 'Bags, hats, watches, and daily accessories. Check dimensions, materials, compatibility, and care.',
       blogLink: '/blog/kakobuy-accessories-guide/',
     },
   ],
@@ -74,9 +74,9 @@ export const siteConfig = {
   // ---- SEO Defaults ----
   seo: {
     hostname: 'https://kakobuylinki.com',
-    title: 'Kakobuy Spreadsheet | Independent Product Directory',
-    description: 'An independent product directory with organized categories, research notes, and clearly disclosed external spreadsheet resources.',
-    keywords: ['kakobuy spreadsheet', 'product directory', 'product information', 'category guide', 'external resource'],
+    title: 'Kakobuy Spreadsheet | Independent Men’s Clothing Directory',
+    description: 'An independent men’s clothing directory with fit notes, material comparisons, research guides, and clearly disclosed external spreadsheet resources.',
+    keywords: ['kakobuy spreadsheet', 'men’s clothing directory', 'menswear fit guide', 'product information', 'external resource'],
     ga4: 'G-N9BCQ2XS4W',
   },
 

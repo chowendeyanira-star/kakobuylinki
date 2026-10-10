@@ -18,11 +18,11 @@
         <div class="hero-panel" aria-label="Directory overview">
           <div class="panel-window-bar"><span></span><span></span><span></span><strong>DIRECTORY / 01</strong></div>
           <div class="panel-content">
-            <p class="panel-kicker">Browse by purpose</p>
+            <p class="panel-kicker">Browse menswear by purpose</p>
             <h2>Find a useful starting point.</h2>
             <div class="panel-list">
               <a href="/shoes/" class="panel-row"><span class="panel-index">01</span><span>Shoes and footwear</span><span>→</span></a>
-              <a href="/clothes/" class="panel-row"><span class="panel-index">02</span><span>Clothes and fit</span><span>→</span></a>
+              <a href="/clothes/" class="panel-row"><span class="panel-index">02</span><span>Men's clothing and fit</span><span>→</span></a>
               <a href="/hats/" class="panel-row"><span class="panel-index">03</span><span>Accessories and style</span><span>→</span></a>
               <a href="/blog/kakobuy-source-review/" class="panel-row"><span class="panel-index">04</span><span>Source review</span><span>→</span></a>
             </div>
@@ -45,7 +45,7 @@
       <div class="section-shell">
         <div class="section-heading">
           <div><p class="eyebrow">Browse the directory</p><h2>Shop by category.<br /><em>Research by detail.</em></h2></div>
-          <p>Start with the category that matches your question. Each path keeps the comparison fields and external responsibility clear.</p>
+          <p>Men’s clothing is the main focus. Start with the category that matches your question, then compare fit, fabric, construction, and source details.</p>
         </div>
         <div class="category-grid">
           <a v-for="(cat, index) in categories" :key="cat.id" :href="`/${cat.id}/`" class="category-card">
@@ -58,7 +58,7 @@
           <a href="/blog/kakobuy-sizing-guide/" class="category-card category-card-featured">
             <span class="card-number">04</span>
             <div class="card-mark">S</div>
-            <h3>Sizing & materials</h3>
+            <h3>Fit & materials</h3>
             <p>Use measurements and construction notes instead of labels alone.</p>
             <span class="card-link">Read the guide <b>↗</b></span>
           </a>
@@ -105,6 +105,38 @@
           </figure>
         </div>
         <div class="visual-integrity"><span>UGC-style demo only</span> These are illustrative user-perspective scenes, not customer testimonials, order counts, ratings, or “verified buyer” claims.</div>
+      </div>
+    </section>
+
+    <section class="reviews-section content-section">
+      <div class="section-shell">
+        <div class="section-heading compact-heading">
+          <div><p class="eyebrow">Men’s clothing feedback</p><h2>What shoppers<br /><em>actually noticed.</em></h2></div>
+          <p>These are excerpts from the user-provided third-party review text. They are not Kakobuy reviews, endorsements, or guarantees.</p>
+        </div>
+        <div class="review-grid">
+          <article class="review-card review-card-featured">
+            <span class="review-label">Positive excerpt</span>
+            <blockquote>“The material is fabulous… He has big shoulders and long arms and it was perfect for his frame.”</blockquote>
+            <p class="review-meta">Third-party customer review excerpt · men’s long-sleeve textured shirt</p>
+          </article>
+          <article class="review-card">
+            <span class="review-label">Fit note</span>
+            <blockquote>“These are really nice men's shirts… medium fits him in this, so it runs a little big.”</blockquote>
+            <p class="review-meta">Third-party customer review excerpt · compare measurements before choosing a size</p>
+          </article>
+          <article class="review-card review-card-caution">
+            <span class="review-label">Caution excerpt</span>
+            <blockquote>“The color… is not what I was going for… the materials do not feel comfy to the skin.”</blockquote>
+            <p class="review-meta">Third-party customer review excerpt · color and fabric feel can vary by expectation</p>
+          </article>
+          <article class="review-card">
+            <span class="review-label">Construction note</span>
+            <blockquote>“The sleeves are a bit long… The material is not very thick or warm.”</blockquote>
+            <p class="review-meta">Third-party customer review excerpt · check sleeve length and seasonality</p>
+          </article>
+        </div>
+        <p class="review-source">Source note: excerpts are adapted from the customer-review text you supplied. The original marketplace, seller, listing, price, availability, and review status should be checked independently before publication or purchase.</p>
       </div>
     </section>
 
@@ -199,10 +231,12 @@ const visibleGuideGroups = computed(() => guideGroups
 
 .visual-section { background: #fff; }.visual-grid { display: grid; grid-template-columns: 1.35fr 1fr 1fr; gap: 14px; }.visual-card { margin: 0; overflow: hidden; border: 1px solid #ddd8cf; background: #f8f6f2; }.visual-card img { display: block; width: 100%; aspect-ratio: 1.35; object-fit: cover; filter: saturate(.82); }.visual-card-large img { aspect-ratio: 1.6; }.visual-card figcaption { display: grid; gap: 7px; padding: 16px 17px 18px; }.visual-card figcaption strong { color: #8b0000; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }.visual-card figcaption span { color: #5e5b56; font-size: 13px; line-height: 1.5; }.visual-integrity { margin-top: 18px; color: #716d67; font-size: 12px; }.visual-integrity span { margin-right: 10px; color: #8b0000; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
 
+.reviews-section { background: #f4f1eb; }.review-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }.review-card { min-height: 220px; display: flex; flex-direction: column; padding: 24px; border: 1px solid #d8d2c9; background: #fff; }.review-card-featured { border-top: 4px solid #8b0000; }.review-card-caution { background: #fbfaf7; }.review-label { color: #8b0000; font-size: 10px; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }.review-card blockquote { margin: 25px 0 18px; color: #262626; font-size: 18px; font-weight: 650; line-height: 1.35; letter-spacing: -.025em; }.review-meta { margin: auto 0 0; color: #77716b; font-size: 11px; line-height: 1.5; }.review-source { max-width: 800px; margin: 24px 0 0; color: #77716b; font-size: 12px; line-height: 1.65; }
+
 .process-section { background: #fff; }.process-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 100px; }.process-heading { display: block; margin: 0; }.process-heading > p { margin-top: 28px; }.process-list { border-top: 1px solid #d5d0c8; }.process-row { display: grid; grid-template-columns: 58px 1fr; gap: 20px; padding: 24px 0; border-bottom: 1px solid #d5d0c8; }.process-row > span { color: #8b0000; font-size: 12px; font-weight: 800; }.process-row h3 { margin: 0 0 6px; font-size: 18px; }.process-row p { margin: 0; color: #706d68; font-size: 13px; line-height: 1.55; }
 
 .disclosure-section { padding: 76px 0; background: #d4af37; }.disclosure-shell { display: grid; grid-template-columns: .8fr 1.2fr; gap: 100px; align-items: center; }.disclosure-shell h2 { margin: 0; color: #1d1d1d; font-size: clamp(34px, 4vw, 54px); line-height: .98; letter-spacing: -.055em; }.disclosure-copy p { max-width: 560px; margin: 0 0 22px; color: #39362d; font-size: 15px; line-height: 1.7; }.disclosure-link { color: #8b0000 !important; font-size: 13px; font-weight: 850; text-decoration: none; }.disclosure-link span { margin-left: 12px; }
 
 @media (max-width: 900px) { .hero-shell, .process-layout, .disclosure-shell { grid-template-columns: 1fr; gap: 54px; }.hero-panel { max-width: 620px; width: 100%; justify-self: center; }.category-grid { grid-template-columns: repeat(2, 1fr); }.trust-shell { grid-template-columns: repeat(3, 1fr); }.trust-item-wide { grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,.22); border-right: 0; } }
-@media (max-width: 620px) { .section-shell, .hero-shell, .trust-shell { width: min(100% - 32px, 1180px); }.directory-hero { padding: 48px 0 46px; }.hero-copy h1 { font-size: 60px; }.hero-lede { font-size: 16px; }.hero-actions { align-items: stretch; flex-direction: column; }.hero-actions a { width: 100%; }.hero-panel { box-shadow: 9px 9px 0 #d4af37; }.panel-content { padding: 28px 22px; }.trust-shell { grid-template-columns: repeat(3, 1fr); }.trust-item { min-height: 88px; padding: 14px 10px; }.trust-item strong { font-size: 21px; }.trust-item span { font-size: 9px; letter-spacing: .03em; }.content-section { padding: 72px 0; }.section-heading { display: block; margin-bottom: 30px; }.section-heading > p { margin-top: 22px; }.category-grid { grid-template-columns: 1fr 1fr; gap: 9px; }.category-card { min-height: 250px; padding: 17px; }.card-mark { margin: 24px 0 16px; }.category-card h3 { font-size: 17px; }.category-card p { font-size: 12px; }.visual-grid { grid-template-columns: 1fr; gap: 12px; }.visual-card-large img, .visual-card img { aspect-ratio: 1.5; }.guide-grid { grid-template-columns: 1fr; }.guide-card:nth-child(odd) { border-right: 0; padding-right: 0; }.guide-card:nth-child(even) { padding-left: 0; }.process-layout, .disclosure-shell { gap: 34px; }.disclosure-section { padding: 58px 0; } }
+@media (max-width: 620px) { .section-shell, .hero-shell, .trust-shell { width: min(100% - 32px, 1180px); }.directory-hero { padding: 48px 0 46px; }.hero-copy h1 { font-size: 60px; }.hero-lede { font-size: 16px; }.hero-actions { align-items: stretch; flex-direction: column; }.hero-actions a { width: 100%; }.hero-panel { box-shadow: 9px 9px 0 #d4af37; }.panel-content { padding: 28px 22px; }.trust-shell { grid-template-columns: repeat(3, 1fr); }.trust-item { min-height: 88px; padding: 14px 10px; }.trust-item strong { font-size: 21px; }.trust-item span { font-size: 9px; letter-spacing: .03em; }.content-section { padding: 72px 0; }.section-heading { display: block; margin-bottom: 30px; }.section-heading > p { margin-top: 22px; }.category-grid { grid-template-columns: 1fr 1fr; gap: 9px; }.category-card { min-height: 250px; padding: 17px; }.card-mark { margin: 24px 0 16px; }.category-card h3 { font-size: 17px; }.category-card p { font-size: 12px; }.visual-grid, .review-grid { grid-template-columns: 1fr; gap: 12px; }.visual-card-large img, .visual-card img { aspect-ratio: 1.5; }.guide-grid { grid-template-columns: 1fr; }.guide-card:nth-child(odd) { border-right: 0; padding-right: 0; }.guide-card:nth-child(even) { padding-left: 0; }.process-layout, .disclosure-shell { gap: 34px; }.disclosure-section { padding: 58px 0; } }
 </style>
