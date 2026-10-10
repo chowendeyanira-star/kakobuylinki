@@ -92,19 +92,19 @@
         </div>
         <div class="visual-grid">
           <figure class="visual-card visual-card-large">
-            <img src="/images/sneakers-lifestyle-collection-us-01.webp" alt="Editorial footwear category reference" loading="lazy" width="800" height="560">
-            <figcaption><strong>01 / Footwear context</strong><span>Use category, material, fit, and source details together.</span></figcaption>
+            <img src="/images/ugc-spreadsheet-phone-demo.jpg" alt="UGC-style demo of a user browsing a spreadsheet on a phone" loading="lazy" width="1664" height="2080">
+            <figcaption><strong>01 / Phone browse demo</strong><span>A user-perspective example of scanning categories and product rows.</span></figcaption>
           </figure>
           <figure class="visual-card">
-            <img src="/images/clothing-wardrobe-organized-au-04.webp" alt="Editorial clothing organization reference" loading="lazy" width="800" height="560">
-            <figcaption><strong>02 / Clothing context</strong><span>Compare measurements and construction rather than labels alone.</span></figcaption>
+            <img src="/images/ugc-spreadsheet-desktop-demo.jpg" alt="UGC-style demo of a user comparing spreadsheet rows on a laptop" loading="lazy" width="2304" height="1536">
+            <figcaption><strong>02 / Desktop compare demo</strong><span>Compare materials, measurements, and source notes in one view.</span></figcaption>
           </figure>
           <figure class="visual-card">
-            <img src="/images/accessories-daily-carry-us-05.webp" alt="Editorial accessories category reference" loading="lazy" width="800" height="560">
-            <figcaption><strong>03 / Accessories context</strong><span>Check dimensions, compatibility, materials, and care notes.</span></figcaption>
+            <img src="/images/ugc-spreadsheet-detail-demo.jpg" alt="UGC-style demo of a user checking spreadsheet details and notes" loading="lazy" width="2304" height="1536">
+            <figcaption><strong>03 / Detail-check demo</strong><span>Use notes and measurements before opening an external source.</span></figcaption>
           </figure>
         </div>
-        <div class="visual-integrity"><span>Editorial reference only</span> No fabricated testimonials, order counts, ratings, or “verified buyer” claims are used on this page.</div>
+        <div class="visual-integrity"><span>UGC-style demo only</span> These are illustrative user-perspective scenes, not customer testimonials, order counts, ratings, or “verified buyer” claims.</div>
       </div>
     </section>
 
