@@ -92,16 +92,16 @@
         </div>
         <div class="visual-grid">
           <figure class="visual-card visual-card-large">
-            <img src="/images/ugc-spreadsheet-phone-demo.jpg" alt="UGC-style demo of a user browsing a spreadsheet on a phone" loading="lazy" width="1664" height="2080">
-            <figcaption><strong>01 / Phone browse demo</strong><span>A user-perspective example of scanning categories and product rows.</span></figcaption>
+            <img src="/images/ugc-menswear-spreadsheet-phone.png" alt="UGC-style demo of a user browsing a menswear spreadsheet on a phone" loading="lazy" width="1664" height="2080">
+            <figcaption><strong>01 / Men’s phone browse</strong><span>Scan men’s shirts, jackets, trousers, and fit fields from a user perspective.</span></figcaption>
           </figure>
           <figure class="visual-card">
-            <img src="/images/ugc-spreadsheet-desktop-demo.jpg" alt="UGC-style demo of a user comparing spreadsheet rows on a laptop" loading="lazy" width="2304" height="1536">
-            <figcaption><strong>02 / Desktop compare demo</strong><span>Compare materials, measurements, and source notes in one view.</span></figcaption>
+            <img src="/images/ugc-menswear-spreadsheet-desktop.png" alt="UGC-style demo of a user comparing menswear spreadsheet rows on a laptop" loading="lazy" width="2304" height="1536">
+            <figcaption><strong>02 / Men’s desktop compare</strong><span>Compare fit, materials, colors, sizes, and source notes in one view.</span></figcaption>
           </figure>
           <figure class="visual-card">
-            <img src="/images/ugc-spreadsheet-detail-demo.jpg" alt="UGC-style demo of a user checking spreadsheet details and notes" loading="lazy" width="2304" height="1536">
-            <figcaption><strong>03 / Detail-check demo</strong><span>Use notes and measurements before opening an external source.</span></figcaption>
+            <img src="/images/ugc-menswear-spreadsheet-detail.png" alt="UGC-style demo of a user checking menswear spreadsheet details and notes" loading="lazy" width="2304" height="1536">
+            <figcaption><strong>03 / Men’s detail check</strong><span>Use chest, sleeve, fabric, color, and care notes before opening a source.</span></figcaption>
           </figure>
         </div>
         <div class="visual-integrity"><span>UGC-style demo only</span> These are illustrative user-perspective scenes, not customer testimonials, order counts, ratings, or “verified buyer” claims.</div>
