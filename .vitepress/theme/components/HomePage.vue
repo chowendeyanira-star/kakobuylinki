@@ -5,19 +5,19 @@
         <div class="profile-avatar">K</div>
         <h1 id="directory-title">Kakobuy Spreadsheet</h1>
         <p class="profile-handle">@kakobuy.menswear.directory</p>
-        <p class="profile-bio">Men’s clothing, fit notes, and spreadsheet research in one focused directory.</p>
+        <p class="profile-bio">Browse men’s clothing, compare fit and materials, then review the original source when you are ready to continue.</p>
         <div class="profile-badges"><span>Men’s clothing first</span><span>Independent directory</span></div>
       </div>
       <nav class="linktree-toc" aria-label="Spreadsheet directory">
-        <p class="toc-label">Directory / tap to jump</p>
-        <a href="/external-resource" class="linktree-row linktree-row-primary"><span class="toc-thumb toc-thumb-sheet">S</span><span><strong>Men’s Spreadsheet</strong><small>Browse the external resource</small></span><b>↗</b></a>
-        <a href="#menswear-categories" class="linktree-row"><span class="toc-thumb">01</span><span><strong>Men’s clothing categories</strong><small>Shirts, knitwear, jackets, trousers</small></span><b>↓</b></a>
-        <a href="#menswear-guides" class="linktree-row"><span class="toc-thumb">02</span><span><strong>Fit & materials guides</strong><small>Measurements, construction, care</small></span><b>↓</b></a>
-        <a href="#menswear-ugc" class="linktree-row"><span class="toc-thumb">03</span><span><strong>Spreadsheet user view</strong><small>Phone, desktop, detail-check demos</small></span><b>↓</b></a>
-        <a href="#menswear-feedback" class="linktree-row"><span class="toc-thumb">04</span><span><strong>Kakobuy purchase feedback</strong><small>What customers noticed after purchase</small></span><b>↓</b></a>
-        <a href="#site-disclosure" class="linktree-row"><span class="toc-thumb">05</span><span><strong>About this directory</strong><small>Scope, source responsibility, notice</small></span><b>↓</b></a>
+        <p class="toc-label">Choose your next buying step</p>
+        <a href="/external-resource" class="linktree-row linktree-row-primary"><span class="toc-thumb toc-thumb-sheet">S</span><span><strong>Open Men’s Spreadsheet</strong><small>Browse products when you are ready to review the source</small></span><b>↗</b></a>
+        <a href="#menswear-categories" class="linktree-row"><span class="toc-thumb">01</span><span><strong>Start with a product category</strong><small>Shirts, knitwear, jackets, trousers</small></span><b>↓</b></a>
+        <a href="#menswear-guides" class="linktree-row"><span class="toc-thumb">02</span><span><strong>Check fit before choosing</strong><small>Measurements, construction, care</small></span><b>↓</b></a>
+        <a href="#menswear-ugc" class="linktree-row"><span class="toc-thumb">03</span><span><strong>See the spreadsheet in use</strong><small>Phone, desktop, detail-check demos</small></span><b>↓</b></a>
+        <a href="#menswear-feedback" class="linktree-row"><span class="toc-thumb">04</span><span><strong>Read purchase feedback</strong><small>What Kakobuy customers noticed after purchase</small></span><b>↓</b></a>
+        <a href="#site-disclosure" class="linktree-row"><span class="toc-thumb">05</span><span><strong>Review the source notice</strong><small>Know what happens before you continue</small></span><b>↓</b></a>
       </nav>
-      <p class="linktree-disclaimer">External resources open only after the source notice. This site does not process payments or place orders.</p>
+      <p class="linktree-disclaimer">When you are ready to review a listing, use the Spreadsheet button. The external source handles its own payment, order, delivery, and service terms.</p>
     </section>
 
     <section id="menswear-categories" class="trust-strip" aria-label="Directory facts">
@@ -57,7 +57,7 @@
     <section id="menswear-guides" class="guides-section content-section">
       <div class="section-shell">
         <div class="section-heading compact-heading">
-          <div><p class="eyebrow">The core library</p><h2>Ten useful chapters.<br /><em>No content maze.</em></h2></div>
+          <div><p class="eyebrow">The buying library</p><h2>Shortlist with confidence.<br /><em>Then review the source.</em></h2></div>
           <a href="/blog/" class="text-link">View all guides <span>↗</span></a>
         </div>
         <div class="guide-grid">
@@ -131,13 +131,13 @@
     <section class="process-section content-section">
       <div class="section-shell process-layout">
         <div class="section-heading process-heading">
-          <div><p class="eyebrow">A transparent path</p><h2>Simple steps.<br /><em>Clear boundaries.</em></h2></div>
-          <p>The directory helps you organize research. The original destination remains responsible for its own content and terms.</p>
+          <div><p class="eyebrow">From shortlist to source</p><h2>Make a decision.<br /><em>Then continue clearly.</em></h2></div>
+          <p>Use the directory to narrow your options before opening the external listing. The original destination remains responsible for its own content and terms.</p>
         </div>
         <div class="process-list">
-          <div class="process-row"><span>01</span><div><h3>Choose a category</h3><p>Begin with shoes, clothes, accessories, or sizing and materials.</p></div></div>
-          <div class="process-row"><span>02</span><div><h3>Compare the stated details</h3><p>Record measurements, materials, dates, and what is still unknown.</p></div></div>
-          <div class="process-row"><span>03</span><div><h3>Review the source notice</h3><p>Open the disclosed third-party resource only after checking its domain and policies.</p></div></div>
+          <div class="process-row"><span>01</span><div><h3>Build a shortlist</h3><p>Choose the men’s category and identify the style, color, and intended use you want.</p></div></div>
+          <div class="process-row"><span>02</span><div><h3>Check the fit fields</h3><p>Compare chest, sleeve, length, fabric, care, and any known limitations before choosing a variant.</p></div></div>
+          <div class="process-row"><span>03</span><div><h3>Open the original source</h3><p>Review the destination notice, then confirm current price, availability, payment, and delivery terms there.</p></div></div>
         </div>
       </div>
     </section>
