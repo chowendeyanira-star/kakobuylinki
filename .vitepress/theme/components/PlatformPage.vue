@@ -129,11 +129,11 @@
       <div class="container">
         <h2>Related Articles</h2>
         <div class="articles-grid">
-          <a href="/blog/article1" class="article-card">
+          <a href="/blog/kakobuy-start-here/" class="article-card">
             <h3>Article 1</h3>
             <p>Placeholder text</p>
           </a>
-          <a href="/blog/article2" class="article-card">
+          <a href="/blog/kakobuy-source-review/" class="article-card">
             <h3>Article 2</h3>
             <p>Placeholder text</p>
           </a>
@@ -148,7 +148,7 @@ import { computed } from 'vue'
 import { useData } from 'vitepress'
 
 const { frontmatter } = useData()
-const spreadsheetUrl = '/go/spreadsheet/'
+const spreadsheetUrl = '/external-resource'
 </script>
 
 <style scoped>

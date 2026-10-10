@@ -10,7 +10,7 @@
       Copyright &copy; 2026 Kakobuy Spreadsheet |
       <a href="/">Home</a> |
       <a href="/blog/">Latest Updates</a> |
-      <a href="/go/spreadsheet/">External Resource Notice</a>
+      <a href="/external-resource">External Resource Notice</a>
     </p>
   </footer>
 </template>

@@ -9,6 +9,17 @@ const auditPath = path.resolve(root, '..', 'kakobuylinki-content-audit', 'conten
 const policyPath = path.join(root, '.vitepress', 'indexing-policy.mjs')
 const reportPath = path.resolve(root, '..', 'kakobuylinki-content-audit', 'indexing-policy-report.md')
 const retainedComponentPages = new Set(['blog/about.md'])
+const retainedCoreBlogFiles = new Set([
+  'blog/kakobuy-start-here.md',
+  'blog/kakobuy-shoes-guide.md',
+  'blog/kakobuy-clothes-guide.md',
+  'blog/kakobuy-accessories-guide.md',
+  'blog/kakobuy-sizing-guide.md',
+  'blog/kakobuy-source-review.md',
+  'blog/kakobuy-price-guide.md',
+  'blog/kakobuy-style-guide.md',
+  'blog/kakobuy-updates.md',
+])
 const sourceExcludedBlogFiles = new Set([
   'blog/kakobuy-article-prompt.md',
   'blog/kakobuy-internal-link-rules.md',
@@ -32,6 +43,7 @@ const audit = JSON.parse(fs.readFileSync(auditPath, 'utf8'))
 const candidates = audit.pages
   .filter((page) => page.file.startsWith('blog/'))
   .filter((page) => !retainedComponentPages.has(page.file))
+  .filter((page) => !retainedCoreBlogFiles.has(page.file))
   .filter((page) => !sourceExcludedBlogFiles.has(page.file))
   .map((page) => {
     const reasons = []

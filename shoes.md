@@ -138,7 +138,7 @@ Whether you are a runner seeking performance, a sneakerhead chasing limited rele
     <span>View Shoes Spreadsheet</span>
     <span class="btn-arrow">→</span>
   </a>
-  <a href="https://repsootd.com/" target="_blank" rel="nofollow noopener noreferrer" class="shopping-btn">Start shopping</a>
+  <a href="/external-resource" target="_blank" rel="nofollow noopener noreferrer" class="shopping-btn">Review external resource</a>
 </div>
 
 ## Understanding Shoe Categories
@@ -236,14 +236,14 @@ Proper care extends the life of your shoes significantly:
 Build on your shoe knowledge with these connected resources:
 
 **Sneaker-Specific Guides:**
-- [Kakobuy Sneakers Database](/blog/kakobuy-sneakers/) — Data-driven analysis of 33+ verified sneaker listings with performance metrics
-- [Kakobuy Running Shoes Guide](/blog/kakobuy-running-shoes/) — Performance running shoe comparisons and technology breakdowns
-- [Kakobuy Basketball Shoes Guide](/blog/kakobuy-basketball-shoes/) — Basketball shoe batch comparisons and quality insights
+- [Kakobuy Sneakers Database](/blog/kakobuy-start-here/) — Data-driven analysis of 33+ verified sneaker listings with performance metrics
+- [Kakobuy Running Shoes Guide](/blog/kakobuy-start-here/) — Performance running shoe comparisons and technology breakdowns
+- [Kakobuy Basketball Shoes Guide](/blog/kakobuy-start-here/) — Basketball shoe batch comparisons and quality insights
 
 **Quality & Sizing Resources:**
-- [Kakobuy QC Photos Tutorial](/blog/kakobuy-qc-photos/) — Step-by-step guide to inspecting footwear quality before shipping
+- [Kakobuy Product reference images Tutorial](/blog/kakobuy-start-here/) — Step-by-step guide to inspecting footwear quality before shipping
 - [Kakobuy Sizing Guide](/blog/kakobuy-sizing-guide/) — Brand-specific sizing charts and measurement conversion tables
-- [Kakobuy Legit Check](/blog/kakobuy-legit-check/) — Authentication markers and quality verification techniques
+- [Kakobuy Legit Check](/blog/kakobuy-start-here/) — Authentication markers and quality verification techniques
 
 ## Explore More Categories
 

@@ -77,7 +77,7 @@ import { computed } from 'vue'
 import { useData } from 'vitepress'
 
 const { frontmatter } = useData()
-const spreadsheetUrl = '/go/spreadsheet/'
+const spreadsheetUrl = '/external-resource'
 </script>
 
 <style scoped>

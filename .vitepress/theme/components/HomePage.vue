@@ -17,7 +17,7 @@
         <div class="hero-cta-group">
           <div class="hero-cta-item">
             <span class="cta-label">External resource</span>
-            <a href="/go/spreadsheet/" class="cta-btn cta-spreadsheet">Review Spreadsheet Resource</a>
+            <a href="/external-resource" class="cta-btn cta-spreadsheet">Review Spreadsheet Resource</a>
           </div>
           <div class="hero-cta-item">
             <span class="cta-label">Site information</span>
@@ -170,42 +170,18 @@ import { indexableBlogPaths } from '../../indexing-policy.mjs'
 
 const categories = siteConfig.categories
 const guideGroups = [
-  { title: 'Getting Started', articles: [
-    { title: 'Kakobuy Spreadsheet for Beginners', link: '/blog/kakobuy-for-beginners/' },
-    { title: 'How to Use the Spreadsheet', link: '/blog/kakobuy-how-to-use/' },
-    { title: 'Shipping Guide', link: '/blog/kakobuy-shipping-guide/' },
-    { title: 'Payment Guide', link: '/blog/kakobuy-payment-guide/' },
-  ] },
-  { title: 'Top Categories', articles: [
-    { title: 'Sneakers Guide', link: '/blog/kakobuy-sneakers/' },
-    { title: 'Hoodies Guide', link: '/blog/kakobuy-hoodies/' },
-    { title: 'T-Shirts Guide', link: '/blog/kakobuy-t-shirts/' },
-    { title: 'Bags Guide', link: '/blog/kakobuy-bags/' },
-  ] },
-  { title: 'Style Guides', articles: [
-    { title: 'Streetwear Guide', link: '/blog/kakobuy-streetwear/' },
-    { title: 'Casual Wear Guide', link: '/blog/kakobuy-casual/' },
-    { title: 'Winter Clothing Guide', link: '/blog/kakobuy-winter/' },
-    { title: 'Summer Essentials Guide', link: '/blog/kakobuy-summer/' },
-  ] },
-  { title: 'Save Money', articles: [
-    { title: 'Coupon Codes & Discounts', link: '/blog/kakobuy-coupon/' },
-    { title: 'Best Deals & Seasonal Sales', link: '/blog/kakobuy-best-deals/' },
-    { title: 'Budget Sneaker Picks', link: '/blog/kakobuy-cheap-sneakers/' },
-    { title: 'Money-Saving Tips', link: '/blog/kakobuy-save-money/' },
-  ] },
-  { title: 'Trust & Safety', articles: [
-    { title: 'Is Kakobuy Legit?', link: '/is-Kakobuy-legit/' },
-    { title: 'Legit Check Guide', link: '/blog/kakobuy-legit-check/' },
-    { title: 'QC Photos Guide', link: '/blog/kakobuy-qc-photos/' },
-    { title: 'User Reviews', link: '/blog/kakobuy-reviews/' },
-  ] },
-  { title: 'Regional Guides', articles: [
-    { title: 'UK Shipping Guide', link: '/blog/kakobuy-uk/' },
-    { title: 'Canada Guide', link: '/blog/kakobuy-canada/' },
-    { title: 'Australia Guide', link: '/blog/kakobuy-australia/' },
-    { title: 'Europe Guide', link: '/blog/kakobuy-europe/' },
-  ] },
+  { title: 'Core Guides', articles: [
+    { title: 'Start Here', link: '/blog/kakobuy-start-here/' },
+    { title: 'Shoes Guide', link: '/blog/kakobuy-shoes-guide/' },
+    { title: 'Clothes Guide', link: '/blog/kakobuy-clothes-guide/' },
+    { title: 'Accessories Guide', link: '/blog/kakobuy-accessories-guide/' },
+    { title: 'Sizing and Materials', link: '/blog/kakobuy-sizing-guide/' },
+    { title: 'Source Review', link: '/blog/kakobuy-source-review/' },
+    { title: 'Pricing References', link: '/blog/kakobuy-price-guide/' },
+    { title: 'Style Index', link: '/blog/kakobuy-style-guide/' },
+    { title: 'Latest Updates', link: '/blog/kakobuy-updates/' },
+    { title: 'About This Directory', link: '/blog/about/' },
+  ]},
 ]
 
 function isIndexableGuide(article) {

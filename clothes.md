@@ -160,7 +160,7 @@ Clothing is more than just covering your body—it is about expressing yourself,
     <span>View Clothes Spreadsheet</span>
     <span class="btn-arrow">→</span>
   </a>
-  <a href="https://repsootd.com/" target="_blank" rel="nofollow noopener noreferrer" class="shopping-btn">Start shopping</a>
+  <a href="/external-resource" target="_blank" rel="nofollow noopener noreferrer" class="shopping-btn">Review external resource</a>
 </div>
 
 ## Understanding Clothing Categories
@@ -291,10 +291,10 @@ Red flags that indicate poor manufacturing:
 
 Deepen your knowledge with these clothing-specific resources:
 
-- [Kakobuy Hoodies Guide](/blog/kakobuy-hoodies/) — Best hoodie picks, fabric weights, and style comparisons for 2026
-- [Kakobuy T-Shirts Guide](/blog/kakobuy-t-shirts/) — T-shirt materials, fit options, and quality indicators
-- [Kakobuy Streetwear Guide](/blog/kakobuy-streetwear/) — Streetwear brands, styling tips, and trend analysis
-- [Kakobuy QC Photos](/blog/kakobuy-qc-photos/) — How to inspect clothing quality using pre-shipment photos
+- [Kakobuy Hoodies Guide](/blog/kakobuy-start-here/) — Best hoodie picks, fabric weights, and style comparisons for 2026
+- [Kakobuy T-Shirts Guide](/blog/kakobuy-start-here/) — T-shirt materials, fit options, and quality indicators
+- [Kakobuy Streetwear Guide](/blog/kakobuy-start-here/) — Streetwear brands, styling tips, and trend analysis
+- [Kakobuy Product reference images](/blog/kakobuy-start-here/) — How to inspect clothing quality using pre-shipment photos
 - [Kakobuy Sizing Guide](/blog/kakobuy-sizing-guide/) — Universal sizing guide for shoes and apparel
 
 ## Explore More Categories

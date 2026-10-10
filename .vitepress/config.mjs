@@ -18,10 +18,10 @@ function normalizedPath(urlOrPath) {
 
 const noindexPaths = new Set([...noindexRelativePaths].map(pathFromRelativePath))
 const retiredBlogRedirects = new Map([
-  ['/blog/kakobuy-casual', '/blog/kakobuy-streetwear/'],
+  ['/blog/kakobuy-casual', '/blog/kakobuy-start-here/'],
   ['/blog/kakobuy-spreadsheet', '/'],
-  ['/blog/kakobuy-summer', '/blog/kakobuy-summer-clothes/'],
-  ['/blog/kakobuy-winter', '/blog/kakobuy-winter-clothes/'],
+  ['/blog/kakobuy-summer', '/blog/kakobuy-start-here/'],
+  ['/blog/kakobuy-winter', '/blog/kakobuy-start-here/'],
 ])
 
 export default defineConfig({

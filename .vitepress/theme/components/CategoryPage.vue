@@ -140,7 +140,7 @@ import { useData } from 'vitepress'
 
 const { frontmatter } = useData()
 const categoryName = computed(() => frontmatter.value.categoryName || 'Category')
-const spreadsheetUrl = '/go/spreadsheet/'
+const spreadsheetUrl = '/external-resource'
 </script>
 
 <style scoped>

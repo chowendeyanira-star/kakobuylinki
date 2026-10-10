@@ -214,7 +214,7 @@
 </template>
 
 <script setup lang="ts">
-const spreadsheetUrl = '/go/spreadsheet/'
+const spreadsheetUrl = '/external-resource'
 </script>
 
 <style scoped>

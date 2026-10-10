@@ -38,13 +38,13 @@ faq:
     answer: "Check rating specifications: 30m means splash resistant only, 100m suitable for swimming, 200m+ for diving. Verify crown is screw-down for higher ratings. Check case back gasket visibility in photos. Note that water resistance decreases over time and requires maintenance."
 relatedArticles:
   - title: "Kakobuy Spreadsheet Watches Guide — Movement Types and Case Materials"
-    link: /blog/kakobuy-watches/
+    link: /blog/kakobuy-start-here/
     desc: Complete guide to watch movements and materials
-  - title: "Kakobuy Spreadsheet QC Photos — How to Inspect Watch Quality"
-    link: /blog/kakobuy-qc-photos/
+  - title: "Kakobuy Spreadsheet Product reference images — How to Inspect Watch Quality"
+    link: /blog/kakobuy-start-here/
     desc: Learn to check watch details in quality photos
   - title: "Kakobuy Spreadsheet Legit Check — Verifying Watch Authenticity"
-    link: /blog/kakobuy-legit-check/
+    link: /blog/kakobuy-start-here/
     desc: Authentication markers for luxury-inspired watches
 ---
 

@@ -31,21 +31,21 @@ export const siteConfig = {
       name: 'Shoes',
       icon: '',
       description: 'Sneakers, boots, casual footwear and more. Find the perfect pair to match your style.',
-      blogLink: '/blog/kakobuy-sneakers/',
+      blogLink: '/blog/kakobuy-shoes-guide/',
     },
     {
       id: 'clothes',
       name: 'Clothes',
       icon: '',
       description: 'Streetwear, hoodies, jackets, pants and more. Build your wardrobe from the ground up.',
-      blogLink: '/blog/kakobuy-hoodies/',
+      blogLink: '/blog/kakobuy-clothes-guide/',
     },
     {
       id: 'hats',
       name: 'Hats',
       icon: '',
       description: 'Snapbacks, beanies, bucket hats and fitted caps. The finishing touch to any look.',
-      blogLink: '/blog/kakobuy-hats/',
+      blogLink: '/blog/kakobuy-accessories-guide/',
     },
   ],
 
@@ -67,7 +67,7 @@ export const siteConfig = {
 
   // ---- External Links ----
   links: {
-    spreadsheet: '/go/spreadsheet/',
+    spreadsheet: '/external-resource',
     contact: 'mailto:hello@kakobuylinki.com',
   },
 

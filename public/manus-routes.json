@@ -1,12 +1,36 @@
 {
   "routes": [
-    { "path": "/", "title": "Kakobuy Product Directory" },
-    { "path": "/shoes/", "title": "Shoes" },
-    { "path": "/clothes/", "title": "Clothes" },
-    { "path": "/hats/", "title": "Hats" },
-    { "path": "/blog/", "title": "Latest Updates" },
-    { "path": "/blog/about/", "title": "About" },
-    { "path": "/privacy-policy/", "title": "Privacy Policy" },
-    { "path": "/go/spreadsheet/", "title": "External Spreadsheet Resource" }
+    {
+      "path": "/",
+      "title": "Kakobuy Product Directory"
+    },
+    {
+      "path": "/shoes/",
+      "title": "Shoes"
+    },
+    {
+      "path": "/clothes/",
+      "title": "Clothes"
+    },
+    {
+      "path": "/hats/",
+      "title": "Hats"
+    },
+    {
+      "path": "/blog/",
+      "title": "Latest Updates"
+    },
+    {
+      "path": "/blog/about/",
+      "title": "About"
+    },
+    {
+      "path": "/privacy-policy/",
+      "title": "Privacy Policy"
+    },
+    {
+      "path": "/external-resource",
+      "title": "External Spreadsheet Resource"
+    }
   ]
 }
