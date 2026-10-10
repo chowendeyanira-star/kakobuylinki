@@ -4,6 +4,7 @@ import './custom.css'
 import GlobalNavbar from './components/GlobalNavbar.vue'
 import SiteFooter from './components/SiteFooter.vue'
 import ConsentBanner from './components/ConsentBanner.vue'
+import ExternalResourceModal from './components/ExternalResourceModal.vue'
 
 export default {
   ...DefaultTheme,
@@ -14,7 +15,8 @@ export default {
         'doc-after': () => null
       }),
       h(SiteFooter),
-      h(ConsentBanner)
+      h(ConsentBanner),
+      h(ExternalResourceModal)
     ])
   }
 }
