@@ -84,8 +84,8 @@
         <div class="why-grid">
           <div class="why-card">
             <div class="why-icon">&#10003;</div>
-            <h3>10,000+ Fashion Finds</h3>
-            <p>Extensive catalog covering sneakers, clothing, accessories, and more across all major style categories.</p>
+            <h3>Curated Fashion Categories</h3>
+            <p>Organized sections covering sneakers, clothing, accessories, and other product information.</p>
           </div>
           <div class="why-card">
             <div class="why-icon">&#10003;</div>

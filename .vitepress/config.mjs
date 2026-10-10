@@ -93,7 +93,7 @@ export default defineConfig({
               });
             }
           });
-          document.querySelectorAll('a.cta-shopping, .shopping-btn, a[href*="repsootd.com"]').forEach(function(el) {
+          document.querySelectorAll('a.cta-shopping, .shopping-btn').forEach(function(el) {
             if (!el.dataset.tracked) {
               el.dataset.tracked = '1';
               el.addEventListener('click', function() {

@@ -4,23 +4,23 @@
       <h3 class="nav-title">Quick Navigation</h3>
       <div class="nav-links">
         <!-- 5 Fixed Core Links -->
-        <a href="https://Kakobuylinki.com/" class="nav-link fixed-link">
+        <a href="/" class="nav-link fixed-link">
           <span class="nav-icon">🏠</span>
           <span class="nav-text">Home</span>
         </a>
-        <a href="https://Kakobuylinki.com/shoes" class="nav-link fixed-link">
+        <a href="/shoes/" class="nav-link fixed-link">
           <span class="nav-icon">👟</span>
           <span class="nav-text">Shoes</span>
         </a>
-        <a href="https://Kakobuylinki.com/clothes" class="nav-link fixed-link">
+        <a href="/clothes/" class="nav-link fixed-link">
           <span class="nav-icon"></span>
           <span class="nav-text">Clothes</span>
         </a>
-        <a href="https://Kakobuylinki.com/hats" class="nav-link fixed-link">
+        <a href="/hats/" class="nav-link fixed-link">
           <span class="nav-icon">🧢</span>
           <span class="nav-text">Hats</span>
         </a>
-        <a href="https://Kakobuylinki.com/blog" class="nav-link fixed-link">
+        <a href="/blog/" class="nav-link fixed-link">
           <span class="nav-icon">📝</span>
           <span class="nav-text">Blog</span>
         </a>
