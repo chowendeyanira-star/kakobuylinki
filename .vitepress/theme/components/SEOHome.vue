@@ -4,15 +4,15 @@
     <section class="hero">
       <div class="container">
           <h1>Kakobuy Spreadsheet</h1>
-          <p>Discover 10,000+ Trending Fashion Finds With QC Photos, Verified Links & Updated Categories.</p>
-          <a :href="spreadsheetUrl" target="_blank" rel="nofollow noopener noreferrer" class="cta-button">Browse Spreadsheet</a>
+          <p>Explore organized product information, available images, source links and category updates.</p>
+          <a :href="spreadsheetUrl" class="cta-button">Browse Spreadsheet</a>
       </div>
     </section>
 
     <!-- Category Navigation -->
     <section class="category-nav">
       <div class="container">
-        <h2>Shop by Category</h2>
+        <h2>Browse by Category</h2>
         <div class="category-grid">
           <a href="/clothes" class="category-card">
             <div class="category-icon">👕</div>
@@ -22,12 +22,12 @@
           <a href="/shoes" class="category-card">
             <div class="category-icon">👟</div>
             <h3>Sneakers</h3>
-            <p>Find the latest sneaker releases, vintage styles, and running shoes with QC photos.</p>
+            <p>Explore sneaker listings, style notes, and available product information.</p>
           </a>
           <a href="/watches" class="category-card">
             <div class="category-icon">⌚</div>
             <h3>Watches</h3>
-            <p>Explore luxury-inspired timepieces and everyday watches with verified links.</p>
+            <p>Explore watch listings with available descriptions and source links.</p>
           </a>
           <a href="/bags" class="category-card">
             <div class="category-icon">💼</div>
@@ -46,11 +46,11 @@
     <!-- Platform Navigation -->
     <section class="platform-nav">
       <div class="container">
-        <h2>Shopping Platforms</h2>
+        <h2>External Resources</h2>
         <div class="platform-grid">
           <a href="/blog/platform" class="platform-card">
             <h3>Kakobuy Spreadsheet</h3>
-            <p>Your gateway to Taobao, 1688, Weidian, and JD.</p>
+            <p>A starting point for reviewing organized product information and external resources.</p>
           </a>
         </div>
       </div>
@@ -59,17 +59,17 @@
     <!-- Why Choose Us -->
     <section class="why-choose">
       <div class="container">
-        <h2>Why Choose Us?</h2>
+        <h2>What This Directory Provides</h2>
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon">📂</div>
-            <h3>One Platform For China Shopping</h3>
-            <p>Integrate multiple Chinese supply channels: Taobao, 1688, Weidian, JD. No need to register multiple platforms separately.</p>
+            <h3>Organized Product Information</h3>
+            <p>Browse product listings and category notes in one independent information directory.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🔄</div>
-            <h3>QC Verification Before Shipping</h3>
-            <p>View warehouse photos, product details, and quality conditions before purchase to reduce risks.</p>
+            <h3>Clear Source Links</h3>
+            <p>Review the destination domain and available information before choosing an external resource.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🔍</div>
@@ -78,8 +78,8 @@
           </div>
           <div class="feature-card">
             <div class="feature-icon">💰</div>
-            <h3>International Shipping Solution</h3>
-            <p>Provide parcel consolidation, multiple shipping routes, and warehouse storage for overseas buyers.</p>
+            <h3>Independent Scope</h3>
+            <p>This site does not process payments, manage orders, provide shipping, operate warehouses, or inspect products.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🧭</div>
@@ -100,27 +100,27 @@
       <div class="container">
         <h2>Featured Collections</h2>
         <div class="collections-grid">
-          <a :href="spreadsheetUrl" target="_blank" rel="nofollow noopener noreferrer" class="collection-card">
+          <a :href="spreadsheetUrl" class="collection-card">
             <h3>Best Sneakers</h3>
             <p>Discover the hottest sneaker releases and classic styles.</p>
           </a>
-          <a :href="spreadsheetUrl" target="_blank" rel="nofollow noopener noreferrer" class="collection-card">
+          <a :href="spreadsheetUrl" class="collection-card">
             <h3>Trending Hoodies</h3>
             <p>Explore oversized fits, heavyweight designs, and streetwear essentials.</p>
           </a>
-          <a :href="spreadsheetUrl" target="_blank" rel="nofollow noopener noreferrer" class="collection-card">
+          <a :href="spreadsheetUrl" class="collection-card">
             <h3>Summer Essentials</h3>
             <p>Lightweight t-shirts, shorts, and accessories for the warm season.</p>
           </a>
-          <a :href="spreadsheetUrl" target="_blank" rel="nofollow noopener noreferrer" class="collection-card">
+          <a :href="spreadsheetUrl" class="collection-card">
             <h3>Luxury Fashion</h3>
             <p>Find designer-inspired clothing, bags, and accessories.</p>
           </a>
-          <a :href="spreadsheetUrl" target="_blank" rel="nofollow noopener noreferrer" class="collection-card">
-            <h3>Budget Finds</h3>
-            <p>High-quality fashion at unbeatable prices.</p>
+          <a :href="spreadsheetUrl" class="collection-card">
+            <h3>Pricing References</h3>
+            <p>Where available, listings may include pricing references that can change on external sites.</p>
           </a>
-          <a :href="spreadsheetUrl" target="_blank" rel="nofollow noopener noreferrer" class="collection-card">
+          <a :href="spreadsheetUrl" class="collection-card">
             <h3>New Arrivals</h3>
             <p>Stay updated with the latest drops and fresh styles.</p>
           </a>
@@ -138,12 +138,12 @@
             <p>Your comprehensive guide to navigating the Kakobuy Spreadsheet and discovering the best fashion finds.</p>
           </a>
           <a href="/blog/article2" class="guide-card">
-            <h3>Kakobuy Spreadsheet With QC: How To Check Product Quality Before Buying</h3>
-            <p>Learn the importance of QC photos and how to verify product quality before your purchase.</p>
+            <h3>How to Review External Resources</h3>
+            <p>Learn how to read source details, timestamps, and third-party disclosures before leaving this directory.</p>
           </a>
           <a href="/blog/article3" class="guide-card">
-            <h3>Kakobuy Spreadsheet Link: How To Find And Buy Products Easily</h3>
-            <p>Understand how Kakobuy Spreadsheet links work and streamline your shopping process from discovery to delivery.</p>
+            <h3>How the Spreadsheet Link Works</h3>
+            <p>Understand the transparent confirmation page and how external resources are disclosed.</p>
           </a>
         </div>
       </div>
@@ -156,11 +156,11 @@
         <div class="faq-grid">
           <div class="faq-item">
             <h3>What is Kakobuy Spreadsheet?</h3>
-            <p>Kakobuy Spreadsheet is a curated product discovery and organization tool that collects trending product links from Chinese e-commerce platforms like Taobao, 1688, Weidian, and JD. It helps users quickly find popular styles with QC photo references.</p>
+            <p>Kakobuy Spreadsheet is an independent product directory that organizes listings, category information, and external resource links. Available images and descriptions remain subject to their original sources.</p>
           </div>
           <div class="faq-item">
-            <h3>How does Kakobuy Spreadsheet help me shop from China?</h3>
-            <p>Kakobuy Spreadsheet acts as a purchasing agent, assisting global users in finding, buying, and shipping products from Chinese platforms. We handle product search, order placement, quality control checks, warehouse storage, and international delivery.</p>
+            <h3>What does Kakobuy Spreadsheet not do?</h3>
+            <p>It is not a purchasing agent or official store. It does not handle product search on behalf of users, order placement, quality checks, warehouse storage, payments, or delivery.</p>
           </div>
           <div class="faq-item">
             <h3>What kind of products can I find?</h3>
@@ -168,7 +168,7 @@
           </div>
           <div class="faq-item">
             <h3>Is Kakobuy Spreadsheet free to access?</h3>
-            <p>Yes, the Kakobuy Spreadsheet is a free product discovery tool. You can browse curated finds, QC photos, and verified links without any cost. Purchase and shipping services through Kakobuy Spreadsheet agent platform will incur standard fees.</p>
+            <p>The directory is available for browsing. External websites have their own information, pricing, payment, delivery, and service policies. Review the destination notice before continuing.</p>
           </div>
         </div>
       </div>
@@ -199,7 +199,7 @@
           <div class="footer-section">
             <h4>Legal</h4>
             <ul>
-              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="/privacy-policy/">Privacy Policy</a></li>
               <li><a href="#">Terms of Service</a></li>
               <li><a href="#">Cookie Policy</a></li>
             </ul>
@@ -214,7 +214,7 @@
 </template>
 
 <script setup lang="ts">
-const spreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10e9euL3y7Bw7GvWUhX2FruG8mJWXz8C7eNwTo69XoQA/edit?gid=1903531254#gid=1903531254'
+const spreadsheetUrl = '/go/spreadsheet/'
 </script>
 
 <style scoped>

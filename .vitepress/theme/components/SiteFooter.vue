@@ -1,13 +1,16 @@
 <template>
   <footer class="site-footer">
     <p class="site-footer-line">
-      Kakobuy Spreadsheet - Your Fashion Discovery Resource |
-      <a href="https://Kakobuylinki.com/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a>
+      Kakobuy Spreadsheet - Independent Product Directory |
+      <a href="/privacy-policy/">Privacy Policy</a> |
+      <a href="/blog/about/">About</a> |
+      <a href="mailto:hello@kakobuylinki.com">Contact</a>
     </p>
     <p class="site-footer-line">
-      Copyright &copy; 2026 bestKakobuy |
-      <a href="https://Kakobuylinki.com/">Home</a> |
-      <a href="https://Kakobuylinki.com/blog">Blog</a>
+      Copyright &copy; 2026 Kakobuy Spreadsheet |
+      <a href="/">Home</a> |
+      <a href="/blog/">Latest Updates</a> |
+      <a href="/go/spreadsheet/">External Resource Notice</a>
     </p>
   </footer>
 </template>

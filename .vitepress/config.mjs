@@ -88,7 +88,7 @@ export default defineConfig({
             if (!el.dataset.tracked) {
               el.dataset.tracked = '1';
               el.addEventListener('click', function() {
-                var name = el.classList.contains('cta-spreadsheet') ? 'spreadsheet_button_click' : 'spreadsheet_link_click';
+                var name = el.classList.contains('cta-spreadsheet') ? 'click_external_resource' : 'confirm_external_visit';
                 sendTracking(name, 'AW-18355431983/oXBcCNidqtgcEK_UxrBE');
               });
             }

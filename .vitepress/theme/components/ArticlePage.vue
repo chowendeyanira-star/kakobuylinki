@@ -65,7 +65,7 @@
         <div class="article-cta">
           <h2>Ready to explore?</h2>
           <p>Check out our curated collections and find your next favorite product.</p>
-          <a :href="spreadsheetUrl" target="_blank" rel="nofollow noopener noreferrer" class="cta-button">Browse Products</a>
+          <a :href="spreadsheetUrl" class="cta-button">Browse Products</a>
         </div>
       </div>
     </section>
@@ -77,7 +77,7 @@ import { computed } from 'vue'
 import { useData } from 'vitepress'
 
 const { frontmatter } = useData()
-const spreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10e9euL3y7Bw7GvWUhX2FruG8mJWXz8C7eNwTo69XoQA/edit?gid=1903531254#gid=1903531254'
+const spreadsheetUrl = '/go/spreadsheet/'
 </script>
 
 <style scoped>

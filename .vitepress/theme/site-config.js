@@ -8,8 +8,8 @@ export const siteConfig = {
   // ---- Brand ----
   brand: {
     name: 'Kakobuy Spreadsheet',
-    tagline: 'Fashion Finds Resource & Buying Guide',
-    description: 'Independent resource for Kakobuy Spreadsheet shoppers. Product guides, category breakdowns, sizing tips, and spreadsheet access — organized in one place.',
+    tagline: 'Independent Product Directory & Resource Guide',
+    description: 'Independent product directory that organizes product information, category guides, and links to external spreadsheet resources.',
     primaryColor: '#8B0000',
     accentColor: '#d4af37',
     logoText: 'Kakobuy Spreadsheet',
@@ -18,11 +18,10 @@ export const siteConfig = {
   // ---- Navigation ----
   nav: [
     { text: 'Home', link: '/' },
-    { text: 'Shoes', link: '/shoes' },
-    { text: 'Clothes', link: '/clothes' },
-    { text: 'Hats', link: '/hats' },
+    { text: 'Categories', link: '/shoes' },
+    { text: 'Latest Updates', link: '/blog' },
     { text: 'About', link: '/blog/about' },
-    { text: 'Blog', link: '/blog' },
+    { text: 'Privacy', link: '/privacy-policy' },
   ],
 
   // ---- Main Categories ----
@@ -68,19 +67,19 @@ export const siteConfig = {
 
   // ---- External Links ----
   links: {
-    spreadsheet: 'https://docs.google.com/spreadsheets/d/10e9euL3y7Bw7GvWUhX2FruG8mJWXz8C7eNwTo69XoQA/edit?gid=1903531254#gid=1903531254',
+    spreadsheet: '/go/spreadsheet/',
     contact: 'mailto:hello@kakobuylinki.com',
   },
 
   // ---- SEO Defaults ----
   seo: {
     hostname: 'https://kakobuylinki.com',
-    title: 'Kakobuy Spreadsheet Guide 2026 - Fashion Finds, Product Database & Buying Tips',
-    description: 'Independent Kakobuy Spreadsheet resource with product guides, category breakdowns, sizing tips, and spreadsheet access. Updated July 2026.',
-    keywords: ['kakobuy spreadsheet guide', 'kakobuy spreadsheet', 'fashion finds', 'sneaker guide', 'streetwear guide', 'buying guide', 'product database', 'product details', 'sizing tips'],
+    title: 'Kakobuy Spreadsheet | Independent Product Directory',
+    description: 'An independent product directory with organized categories, research notes, and clearly disclosed external spreadsheet resources.',
+    keywords: ['kakobuy spreadsheet', 'product directory', 'product information', 'category guide', 'external resource'],
     ga4: 'G-N9BCQ2XS4W',
   },
 
   // ---- Announcement Bar ----
-  announcement: 'Product guides and spreadsheet updated regularly. Browse by category below.',
+  announcement: 'Independent product directory. Browse categories and review external resource details before leaving this site.',
 }

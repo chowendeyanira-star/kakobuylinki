@@ -10,18 +10,18 @@
       </div>
       <div class="hero-overlay"></div>
       <div class="hero-inner">
-        <h1 class="hero-title">Kakobuy Men's Fashion Finds</h1>
-        <p class="hero-subtitle">10,000+ Clothing, Sneakers &amp; Accessories</p>
-        <p class="hero-desc">Explore organized fashion categories on Kakobuy including sneakers, hoodies, jackets and accessories. Updated collections with easy product discovery.</p>
+        <h1 class="hero-title">Kakobuy Product Directory</h1>
+        <p class="hero-subtitle">Organized categories and external spreadsheet resources</p>
+        <p class="hero-desc">Explore organized product information, category guides, and clearly disclosed external resources. Kakobuy Spreadsheet is an independent information directory, not a store or fulfillment service.</p>
         <!-- CTA Buttons -->
         <div class="hero-cta-group">
           <div class="hero-cta-item">
-            <span class="cta-label">Full Catalog</span>
-            <a href="https://docs.google.com/spreadsheets/d/10e9euL3y7Bw7GvWUhX2FruG8mJWXz8C7eNwTo69XoQA/edit?gid=1903531254#gid=1903531254" target="_blank" rel="nofollow noopener noreferrer" class="cta-btn cta-spreadsheet">Access Spreadsheet</a>
+            <span class="cta-label">External resource</span>
+            <a href="/go/spreadsheet/" class="cta-btn cta-spreadsheet">Review Spreadsheet Resource</a>
           </div>
           <div class="hero-cta-item">
-            <span class="cta-label">Fast Selection</span>
-            <a href="https://repsootd.com/" target="_blank" rel="nofollow noopener noreferrer" class="cta-btn cta-shopping">Start Shopping</a>
+            <span class="cta-label">Site information</span>
+            <a href="/blog/about/" class="cta-btn cta-shopping">Read About This Directory</a>
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@
     <section class="how-it-works">
       <div class="container">
         <h2 class="section-title">How It Works</h2>
-        <p class="section-desc">Find your next fashion piece in four simple steps.</p>
+        <p class="section-desc">Research product information in four transparent steps.</p>
         <div class="steps-grid">
           <div class="step-card">
             <div class="step-number">1</div>
@@ -70,8 +70,8 @@
           </div>
           <div class="step-card">
             <div class="step-number">4</div>
-            <h3>Start Shopping</h3>
-            <p>Access the full spreadsheet catalog or jump directly to curated shopping collections.</p>
+            <h3>Review External Resource</h3>
+            <p>Read the destination notice and choose whether to continue to the disclosed third-party spreadsheet.</p>
           </div>
         </div>
       </div>
@@ -104,8 +104,8 @@
           </div>
           <div class="why-card">
             <div class="why-icon">&#10003;</div>
-            <h3>Global Access</h3>
-            <p>Shopping resources available worldwide with shipping options for US, UK, EU, Australia, and more.</p>
+            <h3>Clear Source Disclosure</h3>
+            <p>External resources show their destination and operate under their own information, pricing, payment, and service policies.</p>
           </div>
         </div>
       </div>
@@ -133,12 +133,12 @@
             <p>Each product listing includes standardized information: pricing references, material composition, available sizes, and design features. Use our sizing guides for fit recommendations across different brands and styles.</p>
           </details>
           <details class="faq-item">
-            <summary>How does shopping work?</summary>
-            <p>Click "Start Shopping" to access curated fashion collections, or use the spreadsheet to browse the full catalog. All purchasing happens through external shopping resources with independent checkout.</p>
+            <summary>How do external resources work?</summary>
+            <p>Select the spreadsheet resource to review its destination notice first. You can return to this directory or actively choose to continue to the disclosed third-party website. No automatic redirect or download occurs.</p>
           </details>
           <details class="faq-item">
-            <summary>Do you support international users?</summary>
-            <p>Yes. Our fashion directory serves users worldwide with shopping resources and shipping options for the US, UK, EU, Australia, Canada, and other regions. Check our regional guides for location-specific information.</p>
+            <summary>What does this site provide?</summary>
+            <p>This site organizes product information, category guides, and links to external resources. It does not process payments, manage orders, provide shipping, inspect products, or control third-party content.</p>
           </details>
         </div>
       </div>
